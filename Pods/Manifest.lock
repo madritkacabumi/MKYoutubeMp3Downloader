@@ -1,0 +1,20 @@
+PODS:
+  - mobile-ffmpeg-full (4.3)
+  - Zip (1.1.0)
+
+DEPENDENCIES:
+  - mobile-ffmpeg-full
+  - Zip
+
+SPEC REPOS:
+  trunk:
+    - mobile-ffmpeg-full
+    - Zip
+
+SPEC CHECKSUMS:
+  mobile-ffmpeg-full: af38edede256cb1d4fcbf10dddef39bf529ecd50
+  Zip: 8877eede3dda76bcac281225c20e71c25270774c
+
+PODFILE CHECKSUM: 08b6c7fd21b86672b573ffe23997ffe8cdf12525
+
+COCOAPODS: 1.8.4

@@ -1,0 +1,839 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		A4CF1A2B7EFA48AA7D1DFC45FA6B1E5C /* mobile-ffmpeg-full */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 20B1698FF38E5758EA065320551C355A /* Build configuration list for PBXAggregateTarget "mobile-ffmpeg-full" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = "mobile-ffmpeg-full";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0A445CD6477EDD7B587B8342115AA8CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		0B59D8FE732DC50552FCEE4F0D7753B2 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = C823478CA448B76C69A2DB68D760F59D /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		39464E5D948269EA20FD8367F5571A25 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CCA9B5E7F4F27F0FA302994610D653C /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3DD8E593CD1E9C16A27C316ED398F1EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4B9D69BCB50A3548F839401BF813452A /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 17DDA8CD87F80C2C4F3EB806EF4DCFDA /* zip.c */; };
+		4F1DDBB9240F62D8585BDFB8F5342E06 /* Pods-MKYoutubeMp3Downloader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD19237B3EED10356FE79F136814ADAB /* Pods-MKYoutubeMp3Downloader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		653B489882F154CF089B510A2001245C /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 6A7975DC23D03A3CDABCA0404E4CD8FA /* unzip.c */; };
+		8823E3B2CA15E4774797BE1CF330B338 /* ZipUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471B7D5B0538134FB42874F3DF40EB82 /* ZipUtilities.swift */; };
+		8FB420C8BEC39AD4DDD47B1C482A91EB /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 77BF7A91063EE04F6E3667270F799DF8 /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9C368A7A33571EE6119126EF70DB8B91 /* QuickZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A06517D1F4C45015FB057ABCBC31F6 /* QuickZip.swift */; };
+		B32AAC463925D876F97F6621FC5D8B5F /* Zip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF32045895FDE46A9825093FF49F01E4 /* Zip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B39CAC9BC7D57EEBB797E189AC487366 /* Pods-MKYoutubeMp3Downloader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB79196616589D0F1E3E25058C3A5937 /* Pods-MKYoutubeMp3Downloader-dummy.m */; };
+		BB43B38CCA690577BF5C8E93FE9283FF /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = CC2F9D24E7AE2F3C908B6ACCC5EDC9D0 /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C51301A992286D198C4BD81642150352 /* Zip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C4CFDB63E71C151FB5C90E455018CC /* Zip-dummy.m */; };
+		D75B9A275C2EF688699D3D57C27CE983 /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9CAE264D52BE0CFB1FDAB9A48B8DDF /* Zip.swift */; };
+		DD63D6063EB5DAA46DCE7CF331DEA370 /* Zip.h in Headers */ = {isa = PBXBuildFile; fileRef = BFCEDCCD28482591B06FE4350951A2A8 /* Zip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F862C1CD19A69E8763D35A60F83443C2 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 966AE00D3FBACAA414F984405FEA3F6C /* ioapi.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BABAF98E816B2801342A6A0F6D894D8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31708EE6929C61C0EDA6F5DAE3AF9DB7;
+			remoteInfo = Zip;
+		};
+		D850C5E876BD244E092B0F9AA780FC60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4CF1A2B7EFA48AA7D1DFC45FA6B1E5C;
+			remoteInfo = "mobile-ffmpeg-full";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04F0714B500C7AB8314018ECD7663EE5 /* Pods_MKYoutubeMp3Downloader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MKYoutubeMp3Downloader.framework; path = "Pods-MKYoutubeMp3Downloader.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		066FC4CE8AD1D07E4A9BCD558871D192 /* libaom.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libaom.framework; sourceTree = "<group>"; };
+		06C775FA157798A9DABF664F30808AED /* fribidi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = fribidi.framework; sourceTree = "<group>"; };
+		0B3F9BB9145CA4E92919029754A5E21B /* soxr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = soxr.framework; sourceTree = "<group>"; };
+		0CC4744AD572E1A69D7661B302781FD5 /* libpng.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libpng.framework; sourceTree = "<group>"; };
+		0D39139D55AFBDDEAFAE597C906154DB /* libavformat.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavformat.framework; sourceTree = "<group>"; };
+		11F84759A57FE0F263FEC8FC34CBED4B /* speex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = speex.framework; sourceTree = "<group>"; };
+		1567B8758998E33E7893F8CEB490285D /* libtheoraenc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libtheoraenc.framework; sourceTree = "<group>"; };
+		17DDA8CD87F80C2C4F3EB806EF4DCFDA /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = Zip/minizip/zip.c; sourceTree = "<group>"; };
+		196F3525ACBCB89909AC48C1216F07CF /* libvorbisfile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libvorbisfile.framework; sourceTree = "<group>"; };
+		20F399ACB1418A080C80369701235F10 /* libvorbis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libvorbis.framework; sourceTree = "<group>"; };
+		2433525FC145E0462FAEC9A93EF61925 /* libiconv.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libiconv.framework; sourceTree = "<group>"; };
+		26E9BAA6279B42A07D7EA01F736FAFB1 /* libnettle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libnettle.framework; sourceTree = "<group>"; };
+		2AF646AC5F4DEC9E92FB49CC4E09D5FC /* opus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opus.framework; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		380B7E3E4FE74F6C635C769DE00697ED /* libilbc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libilbc.framework; sourceTree = "<group>"; };
+		388A35691B8F7B4F63D9E7B05088AA5F /* libxml2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libxml2.framework; sourceTree = "<group>"; };
+		3DF12BA224D0E178A583A1BFF6471494 /* fontconfig.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = fontconfig.framework; sourceTree = "<group>"; };
+		3F33FAE30AA8EFD19064AA922AD745A9 /* Zip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zip-prefix.pch"; sourceTree = "<group>"; };
+		3F7D82C9DD8687CB331822935FB61654 /* Pods-MKYoutubeMp3Downloader-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MKYoutubeMp3Downloader-Info.plist"; sourceTree = "<group>"; };
+		40A06517D1F4C45015FB057ABCBC31F6 /* QuickZip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickZip.swift; path = Zip/QuickZip.swift; sourceTree = "<group>"; };
+		420010F8B66850B7E2A4769130E5C7EE /* gnutls.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = gnutls.framework; sourceTree = "<group>"; };
+		42A7000FDADC5466FA8AE976F386B56B /* jpeg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = jpeg.framework; sourceTree = "<group>"; };
+		43A3A71530E8D4E7778F9C3DDDAF4F9E /* lame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = lame.framework; sourceTree = "<group>"; };
+		44E467E0409DB29AFA70E73DDF7D7910 /* mobile-ffmpeg-full.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "mobile-ffmpeg-full.xcconfig"; sourceTree = "<group>"; };
+		45B5DF66C49F7DD9B72F7E6AC1C27D1F /* libopencore-amrnb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "libopencore-amrnb.framework"; sourceTree = "<group>"; };
+		46C23AE899A9620A16894996C66D8BB8 /* libtheoradec.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libtheoradec.framework; sourceTree = "<group>"; };
+		471B7D5B0538134FB42874F3DF40EB82 /* ZipUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZipUtilities.swift; path = Zip/ZipUtilities.swift; sourceTree = "<group>"; };
+		4F3E9ECF8E717CBF1F9556B9CD4D34C7 /* libcharset.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libcharset.framework; sourceTree = "<group>"; };
+		59C4CFDB63E71C151FB5C90E455018CC /* Zip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Zip-dummy.m"; sourceTree = "<group>"; };
+		5CCA9B5E7F4F27F0FA302994610D653C /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = Zip/minizip/ioapi.h; sourceTree = "<group>"; };
+		674AF0A5F03BABFAECD206E6C622C798 /* mobileffmpeg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mobileffmpeg.framework; sourceTree = "<group>"; };
+		6868431B6C53FA7B15B3B8E896EEDD5F /* libhogweed.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libhogweed.framework; sourceTree = "<group>"; };
+		6A45581C6AC27AC23B9E179A9A908201 /* libswresample.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libswresample.framework; sourceTree = "<group>"; };
+		6A7975DC23D03A3CDABCA0404E4CD8FA /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = Zip/minizip/unzip.c; sourceTree = "<group>"; };
+		702D9DC85337CBDBE2F39BB5FFE25250 /* Pods-MKYoutubeMp3Downloader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MKYoutubeMp3Downloader.modulemap"; sourceTree = "<group>"; };
+		7226EA6A27843DF745AEF9305260B716 /* Zip.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zip.xcconfig; sourceTree = "<group>"; };
+		76B3DAAD67163F828E595DBDC45F854E /* Zip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Zip.modulemap; sourceTree = "<group>"; };
+		77BF7A91063EE04F6E3667270F799DF8 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = Zip/minizip/unzip.h; sourceTree = "<group>"; };
+		7B3475A99EDED5F1FA8D67EB6123B2D7 /* libwebp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libwebp.framework; sourceTree = "<group>"; };
+		7D3035E9840436A1EC608941D65F55CE /* libswscale.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libswscale.framework; sourceTree = "<group>"; };
+		7EE5DDCEA71A6912A15B04F244CB4BA8 /* freetype.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = freetype.framework; sourceTree = "<group>"; };
+		8DBAF7998BC42219CB7C2CE21BF15BEC /* libwebpdecoder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libwebpdecoder.framework; sourceTree = "<group>"; };
+		8F6FDE1D75E31E68D7CB9CA8190AEF64 /* libvpx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libvpx.framework; sourceTree = "<group>"; };
+		8FA42E1BD914A0D992231373A4341CF6 /* libopencore-amrwb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "libopencore-amrwb.framework"; sourceTree = "<group>"; };
+		930D497501BDD3D9BBCCD5A3E07B37D3 /* Pods-MKYoutubeMp3Downloader-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MKYoutubeMp3Downloader-acknowledgements.plist"; sourceTree = "<group>"; };
+		94942F6850D18DC291DDED11143A5971 /* Pods-MKYoutubeMp3Downloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKYoutubeMp3Downloader.release.xcconfig"; sourceTree = "<group>"; };
+		95B6AA9F1820FB718CB047C428BD33D6 /* libuuid.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libuuid.framework; sourceTree = "<group>"; };
+		966AE00D3FBACAA414F984405FEA3F6C /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = Zip/minizip/ioapi.c; sourceTree = "<group>"; };
+		974BADF2A89CA4DA013CB500167C7160 /* shine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = shine.framework; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E8E07B63F62B78707B86D029CBB5FB3 /* Pods-MKYoutubeMp3Downloader-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MKYoutubeMp3Downloader-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A67E3FBAC31BD6C225126AC7889A0120 /* snappy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = snappy.framework; sourceTree = "<group>"; };
+		A6EBDC4ADB45442E32F73B778985C8FE /* libvorbisenc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libvorbisenc.framework; sourceTree = "<group>"; };
+		A845402EF959A57A4640F2A4F5155943 /* Zip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Zip.framework; path = Zip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA488AA9BCCB8A9B792D2EAF6440F1D3 /* Zip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Zip-Info.plist"; sourceTree = "<group>"; };
+		AD6BC06E5D64487EEF5B024D2E93FBFE /* kvazaar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = kvazaar.framework; sourceTree = "<group>"; };
+		AF32045895FDE46A9825093FF49F01E4 /* Zip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zip-umbrella.h"; sourceTree = "<group>"; };
+		B0798452F4BFE4820567575723F311D9 /* libwebpdemux.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libwebpdemux.framework; sourceTree = "<group>"; };
+		B737C0568C20BE5E064AFEC7DB303BF3 /* libsndfile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libsndfile.framework; sourceTree = "<group>"; };
+		BFCEDCCD28482591B06FE4350951A2A8 /* Zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Zip.h; path = Zip/Zip.h; sourceTree = "<group>"; };
+		C233A59572AA58143DCFC326A9EB98F1 /* libavfilter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavfilter.framework; sourceTree = "<group>"; };
+		C259BBE8B4EF6274C209C00D4B295B5F /* twolame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = twolame.framework; sourceTree = "<group>"; };
+		C823478CA448B76C69A2DB68D760F59D /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = Zip/minizip/crypt.h; sourceTree = "<group>"; };
+		CAF325CA4BBE720301C2AB920B6B7067 /* gmp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = gmp.framework; sourceTree = "<group>"; };
+		CC2F9D24E7AE2F3C908B6ACCC5EDC9D0 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = Zip/minizip/zip.h; sourceTree = "<group>"; };
+		CF59B381C2581F5343DB710923970F7D /* wavpack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = wavpack.framework; sourceTree = "<group>"; };
+		D2B99E783CD69543E75038734E1031E2 /* expat.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = expat.framework; sourceTree = "<group>"; };
+		D37CB72DDED18D9F16CB088725086570 /* libavdevice.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavdevice.framework; sourceTree = "<group>"; };
+		D3A645DFAE1F0DE4AE558C4501C21DEA /* tiff.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = tiff.framework; sourceTree = "<group>"; };
+		DB79196616589D0F1E3E25058C3A5937 /* Pods-MKYoutubeMp3Downloader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MKYoutubeMp3Downloader-dummy.m"; sourceTree = "<group>"; };
+		DD19237B3EED10356FE79F136814ADAB /* Pods-MKYoutubeMp3Downloader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MKYoutubeMp3Downloader-umbrella.h"; sourceTree = "<group>"; };
+		DDA03A2B787414718F516ECF654AA143 /* libogg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libogg.framework; sourceTree = "<group>"; };
+		E0C3DCAC436151B8D7BAE103D7C53A6E /* libtheora.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libtheora.framework; sourceTree = "<group>"; };
+		E5238B65EFD3778901D6DF4B3949820F /* libavutil.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavutil.framework; sourceTree = "<group>"; };
+		E72CB0F7F1ABB69357F2864B8D707040 /* libass.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libass.framework; sourceTree = "<group>"; };
+		EA9CAE264D52BE0CFB1FDAB9A48B8DDF /* Zip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zip.swift; path = Zip/Zip.swift; sourceTree = "<group>"; };
+		F7881F3A038B4770ECB0917B20E8A3ED /* Pods-MKYoutubeMp3Downloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKYoutubeMp3Downloader.debug.xcconfig"; sourceTree = "<group>"; };
+		F7E8D2B6D9561F290F7F64F00D7E851B /* libavcodec.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavcodec.framework; sourceTree = "<group>"; };
+		FFA7BCEA8D541D00970F92F48EF1510F /* giflib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = giflib.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E83557DE587B3C5E04574AD89026332 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD8E593CD1E9C16A27C316ED398F1EF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFABE07DE25D0EB7C07D51D70102EAF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A445CD6477EDD7B587B8342115AA8CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12606FE02ED0C8582176562CD7E82D32 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				44E467E0409DB29AFA70E73DDF7D7910 /* mobile-ffmpeg-full.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/mobile-ffmpeg-full";
+			sourceTree = "<group>";
+		};
+		3EC21DD99BA2968A91B443FB41ECDEEA /* Zip */ = {
+			isa = PBXGroup;
+			children = (
+				C823478CA448B76C69A2DB68D760F59D /* crypt.h */,
+				966AE00D3FBACAA414F984405FEA3F6C /* ioapi.c */,
+				5CCA9B5E7F4F27F0FA302994610D653C /* ioapi.h */,
+				40A06517D1F4C45015FB057ABCBC31F6 /* QuickZip.swift */,
+				6A7975DC23D03A3CDABCA0404E4CD8FA /* unzip.c */,
+				77BF7A91063EE04F6E3667270F799DF8 /* unzip.h */,
+				17DDA8CD87F80C2C4F3EB806EF4DCFDA /* zip.c */,
+				CC2F9D24E7AE2F3C908B6ACCC5EDC9D0 /* zip.h */,
+				BFCEDCCD28482591B06FE4350951A2A8 /* Zip.h */,
+				EA9CAE264D52BE0CFB1FDAB9A48B8DDF /* Zip.swift */,
+				471B7D5B0538134FB42874F3DF40EB82 /* ZipUtilities.swift */,
+				69B76E98B2336526CF80F1958B42BE0E /* Support Files */,
+			);
+			name = Zip;
+			path = Zip;
+			sourceTree = "<group>";
+		};
+		69B76E98B2336526CF80F1958B42BE0E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				76B3DAAD67163F828E595DBDC45F854E /* Zip.modulemap */,
+				7226EA6A27843DF745AEF9305260B716 /* Zip.xcconfig */,
+				59C4CFDB63E71C151FB5C90E455018CC /* Zip-dummy.m */,
+				AA488AA9BCCB8A9B792D2EAF6440F1D3 /* Zip-Info.plist */,
+				3F33FAE30AA8EFD19064AA922AD745A9 /* Zip-prefix.pch */,
+				AF32045895FDE46A9825093FF49F01E4 /* Zip-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Zip";
+			sourceTree = "<group>";
+		};
+		72B036BD9E018C782FEABA16617B2DED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D257E3550A31B4FE6396C4B711B72041 /* mobile-ffmpeg-full */,
+				3EC21DD99BA2968A91B443FB41ECDEEA /* Zip */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9FCDDF95F495B65F22C9B9B6A94235E3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED656C6724BA38CF23C834C9B6DFC3A0 /* Pods-MKYoutubeMp3Downloader */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				72B036BD9E018C782FEABA16617B2DED /* Pods */,
+				E7707F7DB95F88D143237F68736335A7 /* Products */,
+				9FCDDF95F495B65F22C9B9B6A94235E3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D257E3550A31B4FE6396C4B711B72041 /* mobile-ffmpeg-full */ = {
+			isa = PBXGroup;
+			children = (
+				EB9D6860D3CD3BA3844EA160E1523915 /* Frameworks */,
+				12606FE02ED0C8582176562CD7E82D32 /* Support Files */,
+			);
+			name = "mobile-ffmpeg-full";
+			path = "mobile-ffmpeg-full";
+			sourceTree = "<group>";
+		};
+		E7707F7DB95F88D143237F68736335A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04F0714B500C7AB8314018ECD7663EE5 /* Pods_MKYoutubeMp3Downloader.framework */,
+				A845402EF959A57A4640F2A4F5155943 /* Zip.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB9D6860D3CD3BA3844EA160E1523915 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2B99E783CD69543E75038734E1031E2 /* expat.framework */,
+				3DF12BA224D0E178A583A1BFF6471494 /* fontconfig.framework */,
+				7EE5DDCEA71A6912A15B04F244CB4BA8 /* freetype.framework */,
+				06C775FA157798A9DABF664F30808AED /* fribidi.framework */,
+				FFA7BCEA8D541D00970F92F48EF1510F /* giflib.framework */,
+				CAF325CA4BBE720301C2AB920B6B7067 /* gmp.framework */,
+				420010F8B66850B7E2A4769130E5C7EE /* gnutls.framework */,
+				42A7000FDADC5466FA8AE976F386B56B /* jpeg.framework */,
+				AD6BC06E5D64487EEF5B024D2E93FBFE /* kvazaar.framework */,
+				43A3A71530E8D4E7778F9C3DDDAF4F9E /* lame.framework */,
+				066FC4CE8AD1D07E4A9BCD558871D192 /* libaom.framework */,
+				E72CB0F7F1ABB69357F2864B8D707040 /* libass.framework */,
+				F7E8D2B6D9561F290F7F64F00D7E851B /* libavcodec.framework */,
+				D37CB72DDED18D9F16CB088725086570 /* libavdevice.framework */,
+				C233A59572AA58143DCFC326A9EB98F1 /* libavfilter.framework */,
+				0D39139D55AFBDDEAFAE597C906154DB /* libavformat.framework */,
+				E5238B65EFD3778901D6DF4B3949820F /* libavutil.framework */,
+				4F3E9ECF8E717CBF1F9556B9CD4D34C7 /* libcharset.framework */,
+				6868431B6C53FA7B15B3B8E896EEDD5F /* libhogweed.framework */,
+				2433525FC145E0462FAEC9A93EF61925 /* libiconv.framework */,
+				380B7E3E4FE74F6C635C769DE00697ED /* libilbc.framework */,
+				26E9BAA6279B42A07D7EA01F736FAFB1 /* libnettle.framework */,
+				DDA03A2B787414718F516ECF654AA143 /* libogg.framework */,
+				45B5DF66C49F7DD9B72F7E6AC1C27D1F /* libopencore-amrnb.framework */,
+				8FA42E1BD914A0D992231373A4341CF6 /* libopencore-amrwb.framework */,
+				0CC4744AD572E1A69D7661B302781FD5 /* libpng.framework */,
+				B737C0568C20BE5E064AFEC7DB303BF3 /* libsndfile.framework */,
+				6A45581C6AC27AC23B9E179A9A908201 /* libswresample.framework */,
+				7D3035E9840436A1EC608941D65F55CE /* libswscale.framework */,
+				E0C3DCAC436151B8D7BAE103D7C53A6E /* libtheora.framework */,
+				46C23AE899A9620A16894996C66D8BB8 /* libtheoradec.framework */,
+				1567B8758998E33E7893F8CEB490285D /* libtheoraenc.framework */,
+				95B6AA9F1820FB718CB047C428BD33D6 /* libuuid.framework */,
+				20F399ACB1418A080C80369701235F10 /* libvorbis.framework */,
+				A6EBDC4ADB45442E32F73B778985C8FE /* libvorbisenc.framework */,
+				196F3525ACBCB89909AC48C1216F07CF /* libvorbisfile.framework */,
+				8F6FDE1D75E31E68D7CB9CA8190AEF64 /* libvpx.framework */,
+				7B3475A99EDED5F1FA8D67EB6123B2D7 /* libwebp.framework */,
+				8DBAF7998BC42219CB7C2CE21BF15BEC /* libwebpdecoder.framework */,
+				B0798452F4BFE4820567575723F311D9 /* libwebpdemux.framework */,
+				388A35691B8F7B4F63D9E7B05088AA5F /* libxml2.framework */,
+				674AF0A5F03BABFAECD206E6C622C798 /* mobileffmpeg.framework */,
+				2AF646AC5F4DEC9E92FB49CC4E09D5FC /* opus.framework */,
+				974BADF2A89CA4DA013CB500167C7160 /* shine.framework */,
+				A67E3FBAC31BD6C225126AC7889A0120 /* snappy.framework */,
+				0B3F9BB9145CA4E92919029754A5E21B /* soxr.framework */,
+				11F84759A57FE0F263FEC8FC34CBED4B /* speex.framework */,
+				D3A645DFAE1F0DE4AE558C4501C21DEA /* tiff.framework */,
+				C259BBE8B4EF6274C209C00D4B295B5F /* twolame.framework */,
+				CF59B381C2581F5343DB710923970F7D /* wavpack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED656C6724BA38CF23C834C9B6DFC3A0 /* Pods-MKYoutubeMp3Downloader */ = {
+			isa = PBXGroup;
+			children = (
+				702D9DC85337CBDBE2F39BB5FFE25250 /* Pods-MKYoutubeMp3Downloader.modulemap */,
+				9E8E07B63F62B78707B86D029CBB5FB3 /* Pods-MKYoutubeMp3Downloader-acknowledgements.markdown */,
+				930D497501BDD3D9BBCCD5A3E07B37D3 /* Pods-MKYoutubeMp3Downloader-acknowledgements.plist */,
+				DB79196616589D0F1E3E25058C3A5937 /* Pods-MKYoutubeMp3Downloader-dummy.m */,
+				3F7D82C9DD8687CB331822935FB61654 /* Pods-MKYoutubeMp3Downloader-Info.plist */,
+				DD19237B3EED10356FE79F136814ADAB /* Pods-MKYoutubeMp3Downloader-umbrella.h */,
+				F7881F3A038B4770ECB0917B20E8A3ED /* Pods-MKYoutubeMp3Downloader.debug.xcconfig */,
+				94942F6850D18DC291DDED11143A5971 /* Pods-MKYoutubeMp3Downloader.release.xcconfig */,
+			);
+			name = "Pods-MKYoutubeMp3Downloader";
+			path = "Target Support Files/Pods-MKYoutubeMp3Downloader";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		330A825ACBC8728C72CC09913D0FE735 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B59D8FE732DC50552FCEE4F0D7753B2 /* crypt.h in Headers */,
+				39464E5D948269EA20FD8367F5571A25 /* ioapi.h in Headers */,
+				8FB420C8BEC39AD4DDD47B1C482A91EB /* unzip.h in Headers */,
+				B32AAC463925D876F97F6621FC5D8B5F /* Zip-umbrella.h in Headers */,
+				DD63D6063EB5DAA46DCE7CF331DEA370 /* Zip.h in Headers */,
+				BB43B38CCA690577BF5C8E93FE9283FF /* zip.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEFC4F43665C16F87A463C430D81FE89 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F1DDBB9240F62D8585BDFB8F5342E06 /* Pods-MKYoutubeMp3Downloader-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		31708EE6929C61C0EDA6F5DAE3AF9DB7 /* Zip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 608DA657D5E30B576DA6268896352268 /* Build configuration list for PBXNativeTarget "Zip" */;
+			buildPhases = (
+				330A825ACBC8728C72CC09913D0FE735 /* Headers */,
+				ED9BC8E6AC112461613C834DACDAB1EF /* Sources */,
+				7E83557DE587B3C5E04574AD89026332 /* Frameworks */,
+				05A919DA9135F97A03AC971800714018 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zip;
+			productName = Zip;
+			productReference = A845402EF959A57A4640F2A4F5155943 /* Zip.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4EA11886F698909EA257311BDC4A58D6 /* Pods-MKYoutubeMp3Downloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9605255235A69DBBDACC3FD52976A58F /* Build configuration list for PBXNativeTarget "Pods-MKYoutubeMp3Downloader" */;
+			buildPhases = (
+				EEFC4F43665C16F87A463C430D81FE89 /* Headers */,
+				5C08F63D6DB9DDA8F6154FE37C267010 /* Sources */,
+				FFABE07DE25D0EB7C07D51D70102EAF3 /* Frameworks */,
+				9BCAF5595DCDEEA8F6198CE45127FCAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				032B410A2BDF05C2B42F38440E2F5451 /* PBXTargetDependency */,
+				0940267DF941F20D03CD099FF40751DF /* PBXTargetDependency */,
+			);
+			name = "Pods-MKYoutubeMp3Downloader";
+			productName = "Pods-MKYoutubeMp3Downloader";
+			productReference = 04F0714B500C7AB8314018ECD7663EE5 /* Pods_MKYoutubeMp3Downloader.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E7707F7DB95F88D143237F68736335A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4CF1A2B7EFA48AA7D1DFC45FA6B1E5C /* mobile-ffmpeg-full */,
+				4EA11886F698909EA257311BDC4A58D6 /* Pods-MKYoutubeMp3Downloader */,
+				31708EE6929C61C0EDA6F5DAE3AF9DB7 /* Zip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05A919DA9135F97A03AC971800714018 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BCAF5595DCDEEA8F6198CE45127FCAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C08F63D6DB9DDA8F6154FE37C267010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B39CAC9BC7D57EEBB797E189AC487366 /* Pods-MKYoutubeMp3Downloader-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED9BC8E6AC112461613C834DACDAB1EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F862C1CD19A69E8763D35A60F83443C2 /* ioapi.c in Sources */,
+				9C368A7A33571EE6119126EF70DB8B91 /* QuickZip.swift in Sources */,
+				653B489882F154CF089B510A2001245C /* unzip.c in Sources */,
+				C51301A992286D198C4BD81642150352 /* Zip-dummy.m in Sources */,
+				4B9D69BCB50A3548F839401BF813452A /* zip.c in Sources */,
+				D75B9A275C2EF688699D3D57C27CE983 /* Zip.swift in Sources */,
+				8823E3B2CA15E4774797BE1CF330B338 /* ZipUtilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		032B410A2BDF05C2B42F38440E2F5451 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Zip;
+			target = 31708EE6929C61C0EDA6F5DAE3AF9DB7 /* Zip */;
+			targetProxy = BABAF98E816B2801342A6A0F6D894D8F /* PBXContainerItemProxy */;
+		};
+		0940267DF941F20D03CD099FF40751DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "mobile-ffmpeg-full";
+			target = A4CF1A2B7EFA48AA7D1DFC45FA6B1E5C /* mobile-ffmpeg-full */;
+			targetProxy = D850C5E876BD244E092B0F9AA780FC60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0CEE32F0A4CE4030A02DE376098B0B85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44E467E0409DB29AFA70E73DDF7D7910 /* mobile-ffmpeg-full.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14CE01D93B49CE32EF37D4C406344EBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7226EA6A27843DF745AEF9305260B716 /* Zip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Zip/Zip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Zip/Zip-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Zip/Zip.modulemap";
+				PRODUCT_MODULE_NAME = Zip;
+				PRODUCT_NAME = Zip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		257497152829C177993B5EC99C1D227A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7EFA6F5978C75E4FA9EA2994CCE7E00E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94942F6850D18DC291DDED11143A5971 /* Pods-MKYoutubeMp3Downloader.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MKYoutubeMp3Downloader/Pods-MKYoutubeMp3Downloader-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MKYoutubeMp3Downloader/Pods-MKYoutubeMp3Downloader.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7F2AED2D941F434257C1237BF45EE778 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7226EA6A27843DF745AEF9305260B716 /* Zip.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Zip/Zip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Zip/Zip-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Zip/Zip.modulemap";
+				PRODUCT_MODULE_NAME = Zip;
+				PRODUCT_NAME = Zip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		87D154CC203EB4AC2A1482516FFDB0D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44E467E0409DB29AFA70E73DDF7D7910 /* mobile-ffmpeg-full.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E5F7123AC49C8B3608CA240B152714A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7881F3A038B4770ECB0917B20E8A3ED /* Pods-MKYoutubeMp3Downloader.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MKYoutubeMp3Downloader/Pods-MKYoutubeMp3Downloader-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MKYoutubeMp3Downloader/Pods-MKYoutubeMp3Downloader.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20B1698FF38E5758EA065320551C355A /* Build configuration list for PBXAggregateTarget "mobile-ffmpeg-full" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CEE32F0A4CE4030A02DE376098B0B85 /* Debug */,
+				87D154CC203EB4AC2A1482516FFDB0D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD8F832993327D1DD8046C3CBCBD97CD /* Debug */,
+				257497152829C177993B5EC99C1D227A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		608DA657D5E30B576DA6268896352268 /* Build configuration list for PBXNativeTarget "Zip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F2AED2D941F434257C1237BF45EE778 /* Debug */,
+				14CE01D93B49CE32EF37D4C406344EBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9605255235A69DBBDACC3FD52976A58F /* Build configuration list for PBXNativeTarget "Pods-MKYoutubeMp3Downloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5F7123AC49C8B3608CA240B152714A3 /* Debug */,
+				7EFA6F5978C75E4FA9EA2994CCE7E00E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module MKYoutubeMp3Downloader {
+  umbrella header "MKYoutubeMp3Downloader-umbrella.h"
+
+  export *
+  module * { export * }
+}

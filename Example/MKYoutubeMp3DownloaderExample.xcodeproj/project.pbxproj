@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20A53A46724FE50DA45FACF3 /* Pods_MKYoutubeMp3DownloaderExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4514268A49D3FD6C9D055CD /* Pods_MKYoutubeMp3DownloaderExample.framework */; };
+		7009373823B668B3006B7683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7009373723B668B3006B7683 /* AppDelegate.swift */; };
+		7009373A23B668B3006B7683 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7009373923B668B3006B7683 /* SceneDelegate.swift */; };
+		7009373C23B668B3006B7683 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7009373B23B668B3006B7683 /* ViewController.swift */; };
+		7009373F23B668B3006B7683 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7009373D23B668B3006B7683 /* Main.storyboard */; };
+		7009374123B668B5006B7683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7009374023B668B5006B7683 /* Assets.xcassets */; };
+		7009374423B668B5006B7683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7009374223B668B5006B7683 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7009373423B668B3006B7683 /* MKYoutubeMp3DownloaderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKYoutubeMp3DownloaderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7009373723B668B3006B7683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7009373923B668B3006B7683 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7009373B23B668B3006B7683 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7009373E23B668B3006B7683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7009374023B668B5006B7683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7009374323B668B5006B7683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7009374523B668B5006B7683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73884F1172838E8E847C5ECA /* Pods-MKYoutubeMp3DownloaderExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKYoutubeMp3DownloaderExample.release.xcconfig"; path = "Target Support Files/Pods-MKYoutubeMp3DownloaderExample/Pods-MKYoutubeMp3DownloaderExample.release.xcconfig"; sourceTree = "<group>"; };
+		C4514268A49D3FD6C9D055CD /* Pods_MKYoutubeMp3DownloaderExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKYoutubeMp3DownloaderExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F608B9D96A07FB7807768C09 /* Pods-MKYoutubeMp3DownloaderExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKYoutubeMp3DownloaderExample.debug.xcconfig"; path = "Target Support Files/Pods-MKYoutubeMp3DownloaderExample/Pods-MKYoutubeMp3DownloaderExample.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7009373123B668B3006B7683 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20A53A46724FE50DA45FACF3 /* Pods_MKYoutubeMp3DownloaderExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0647433A3BE6DD7152ED9C1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F608B9D96A07FB7807768C09 /* Pods-MKYoutubeMp3DownloaderExample.debug.xcconfig */,
+				73884F1172838E8E847C5ECA /* Pods-MKYoutubeMp3DownloaderExample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7009372B23B668B3006B7683 = {
+			isa = PBXGroup;
+			children = (
+				7009373623B668B3006B7683 /* MKYoutubeMp3DownloaderExample */,
+				7009373523B668B3006B7683 /* Products */,
+				0647433A3BE6DD7152ED9C1C /* Pods */,
+				C02421EEB978BD194739FD8E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7009373523B668B3006B7683 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7009373423B668B3006B7683 /* MKYoutubeMp3DownloaderExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7009373623B668B3006B7683 /* MKYoutubeMp3DownloaderExample */ = {
+			isa = PBXGroup;
+			children = (
+				7009373723B668B3006B7683 /* AppDelegate.swift */,
+				7009373923B668B3006B7683 /* SceneDelegate.swift */,
+				7009373B23B668B3006B7683 /* ViewController.swift */,
+				7009373D23B668B3006B7683 /* Main.storyboard */,
+				7009374023B668B5006B7683 /* Assets.xcassets */,
+				7009374223B668B5006B7683 /* LaunchScreen.storyboard */,
+				7009374523B668B5006B7683 /* Info.plist */,
+			);
+			path = MKYoutubeMp3DownloaderExample;
+			sourceTree = "<group>";
+		};
+		C02421EEB978BD194739FD8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4514268A49D3FD6C9D055CD /* Pods_MKYoutubeMp3DownloaderExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7009373323B668B3006B7683 /* MKYoutubeMp3DownloaderExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7009374823B668B5006B7683 /* Build configuration list for PBXNativeTarget "MKYoutubeMp3DownloaderExample" */;
+			buildPhases = (
+				ECABCB78EBF1C2424321A224 /* [CP] Check Pods Manifest.lock */,
+				7009373023B668B3006B7683 /* Sources */,
+				7009373123B668B3006B7683 /* Frameworks */,
+				7009373223B668B3006B7683 /* Resources */,
+				7778538D29D6AFA4A10E725E /* [CP] Embed Pods Frameworks */,
+				FBD4B953FF2AD21FC313057F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MKYoutubeMp3DownloaderExample;
+			productName = MKYoutubeMp3DownloaderExample;
+			productReference = 7009373423B668B3006B7683 /* MKYoutubeMp3DownloaderExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7009372C23B668B3006B7683 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Madrit Kacabumi";
+				TargetAttributes = {
+					7009373323B668B3006B7683 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 7009372F23B668B3006B7683 /* Build configuration list for PBXProject "MKYoutubeMp3DownloaderExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7009372B23B668B3006B7683;
+			productRefGroup = 7009373523B668B3006B7683 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7009373323B668B3006B7683 /* MKYoutubeMp3DownloaderExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7009373223B668B3006B7683 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7009374423B668B5006B7683 /* LaunchScreen.storyboard in Resources */,
+				7009374123B668B5006B7683 /* Assets.xcassets in Resources */,
+				7009373F23B668B3006B7683 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7778538D29D6AFA4A10E725E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MKYoutubeMp3DownloaderExample/Pods-MKYoutubeMp3DownloaderExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MKYoutubeMp3DownloaderExample/Pods-MKYoutubeMp3DownloaderExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MKYoutubeMp3DownloaderExample/Pods-MKYoutubeMp3DownloaderExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECABCB78EBF1C2424321A224 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MKYoutubeMp3DownloaderExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBD4B953FF2AD21FC313057F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MKYoutubeMp3DownloaderExample/Pods-MKYoutubeMp3DownloaderExample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MKYoutubeMp3DownloaderExample/Pods-MKYoutubeMp3DownloaderExample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MKYoutubeMp3DownloaderExample/Pods-MKYoutubeMp3DownloaderExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7009373023B668B3006B7683 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7009373C23B668B3006B7683 /* ViewController.swift in Sources */,
+				7009373823B668B3006B7683 /* AppDelegate.swift in Sources */,
+				7009373A23B668B3006B7683 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7009373D23B668B3006B7683 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7009373E23B668B3006B7683 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7009374223B668B5006B7683 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7009374323B668B5006B7683 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7009374623B668B5006B7683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7009374723B668B5006B7683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7009374923B668B5006B7683 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F608B9D96A07FB7807768C09 /* Pods-MKYoutubeMp3DownloaderExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B7YQSM2767;
+				INFOPLIST_FILE = MKYoutubeMp3DownloaderExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madritkacabumi.example.MKYoutubeMp3DownloaderExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7009374A23B668B5006B7683 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73884F1172838E8E847C5ECA /* Pods-MKYoutubeMp3DownloaderExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B7YQSM2767;
+				INFOPLIST_FILE = MKYoutubeMp3DownloaderExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madritkacabumi.example.MKYoutubeMp3DownloaderExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7009372F23B668B3006B7683 /* Build configuration list for PBXProject "MKYoutubeMp3DownloaderExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7009374623B668B5006B7683 /* Debug */,
+				7009374723B668B5006B7683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7009374823B668B5006B7683 /* Build configuration list for PBXNativeTarget "MKYoutubeMp3DownloaderExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7009374923B668B5006B7683 /* Debug */,
+				7009374A23B668B5006B7683 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7009372C23B668B3006B7683 /* Project object */;
+}

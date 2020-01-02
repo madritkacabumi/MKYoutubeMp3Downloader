@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-MKYoutubeMp3DownloaderExample/Pods-MKYoutubeMp3DownloaderExample-frameworks.sh
+${PODS_ROOT}/../../libs/NodeMobile.framework
+${BUILT_PRODUCTS_DIR}/Zip/Zip.framework
