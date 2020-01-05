@@ -14,9 +14,9 @@ public struct YoutubeDownloaderInfoModel {
     private let kThumbnail = "thumbnail"
     private let kLength = "length"
     
-    let title : String
-    let thumbnail : String
-    let length : Double
+    public let title : String
+    public let thumbnail : String
+    public let length : Double
     
     init(body : [String : Any]) {
         title = body[kTitle] as? String ?? ""

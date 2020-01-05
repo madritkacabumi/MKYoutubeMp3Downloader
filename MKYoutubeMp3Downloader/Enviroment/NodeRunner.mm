@@ -47,8 +47,7 @@
 
     //Start node, with argc and argv.
     try {
-        node_start(argument_count,argv);
-        
+        node_start(argument_count, argv);
     } catch (const std::exception& e) {
         printf("%s", e.what());
     }

@@ -51,7 +51,7 @@ public class ServerManager {
         
         pendingServerStarted = true
         nodejsThread = Thread(target: self, selector: #selector(startNode), object: nil)
-        // Set 2MB of stack space for the Node.js thread.
+        // Set 5MB of stack space for the Node.js thread.
         nodejsThread?.stackSize = 5 * 1024 * 1024
         nodejsThread?.start()
     }
@@ -89,9 +89,18 @@ public class ServerManager {
         
         do {
             try Zip.unzipFile(server, destination: tempFolder, overwrite: true, password: nil, progress: nil)
+            
+            //todo remove
+//            let bundleAppJs = mainBundle.url(forResource: "app", withExtension: "js")!
+//            let localAppJs = tempFolder.appendingPathComponent("app.js")
+//            try fileManager.removeItem(at: localAppJs)
+//            try fileManager.copyItem(at: bundleAppJs, to: localAppJs)
+            
         } catch {
             print(error.localizedDescription)
         }
+        
+        
         folderUrl = tempFolder
     }
     
@@ -100,7 +109,7 @@ public class ServerManager {
      - Returns: The directory to extract files `URL`.
      */
     private func getDocumentsDirectory() -> URL {
-        return  URL(fileURLWithPath: NSTemporaryDirectory())
+        return FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
     }
     
     /**
@@ -113,7 +122,7 @@ public class ServerManager {
         serverStarted = true
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
-//            self?.showGreetings()
+            self?.showGreetings()
             self?.serverConnectCallback?()
             self?.pendingServerStarted = false
         }

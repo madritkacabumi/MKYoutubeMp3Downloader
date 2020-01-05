@@ -20,7 +20,8 @@
   "source_files": "MKYoutubeMp3Downloader/**/*",
   "resource_bundles": {
     "MKYoutubeToMp3DownloaderZip": [
-      "MKYoutubeMp3Downloader/Enviroment/NodejsServer/*.zip"
+      "MKYoutubeMp3Downloader/Enviroment/NodejsServer/*.zip",
+      "MKYoutubeMp3Downloader/Enviroment/NodejsServer/server/app.js"
     ]
   },
   "ios": {

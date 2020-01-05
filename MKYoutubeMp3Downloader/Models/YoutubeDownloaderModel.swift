@@ -31,7 +31,7 @@ public struct YoutubeDownloaderModel{
     public let videoFileUrl : String?
     public let message : String
     
-    let mp3AudioFile : URL?
+    public let mp3AudioFile : URL?
     
     public init?(params : [String : Any]) {
         if let mActionString = params[YoutubeDownloaderModel.kAction] as? String, let mAction = YoutubeDownloaderAction(rawValue: mActionString) {

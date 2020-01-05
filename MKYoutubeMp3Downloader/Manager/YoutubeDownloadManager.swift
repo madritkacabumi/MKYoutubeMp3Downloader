@@ -183,14 +183,14 @@ public class YoutubeDownloadManager: NSObject {
                 errorResponse == nil else {
                     let errorMessage = "error : \(errorResponse?.localizedDescription  ?? "Unknown error or no connection to internet")"
                     let error = YoutubeErrorModel(message: errorMessage)
-                    callback(nil, error)
+                    self.dispatchActions(ytModel: nil, ytError: error)
                     return
             }
             
             guard (200 ... 299) ~= response.statusCode else {                    // check for http errors
                 let errorMessage = "statusCode should be 2xx, but is \(response.statusCode)" + "\n" + "response = \(response)"
                 let error = YoutubeErrorModel(message: errorMessage)
-                callback(nil, error)
+                self.dispatchActions(ytModel: nil, ytError: error)
                 return
             }
             
@@ -204,7 +204,7 @@ public class YoutubeDownloadManager: NSObject {
                 let parsedError = String(data: data, encoding: .utf8) ?? "Uknown error from parsing the response"
                 let errorMessage = "Invalid json format or invalid properties => \(parsedError)"
                 let error = YoutubeErrorModel(message: errorMessage)
-                callback(nil, error)
+                self.dispatchActions(ytModel: nil, ytError: error)
             }
         }
         
@@ -341,7 +341,7 @@ public class YoutubeDownloadManager: NSObject {
             let rc = MobileFFmpeg.getLastReturnCode()
             let outPut = MobileFFmpeg.getLastCommandOutput() ?? "No execution output"
             
-            var error : YoutubeErrorModel?
+            var ytError : YoutubeErrorModel?
             var ytdAction : YoutubeDownloaderModel?
             
             switch rc {
@@ -353,10 +353,17 @@ public class YoutubeDownloadManager: NSObject {
                 ])
             default:
                 let errorMsg = "Command execution failed with rc=\(rc) and output=\(outPut)"
-                error = YoutubeErrorModel(message: errorMsg)
+                ytError = YoutubeErrorModel(message: errorMsg)
             }
             
-            self.dispatchActions(ytModel: ytdAction, ytError: error)
+            //delete youtube video, we dont need it anymore
+            do {
+                try fileManager.removeItem(at: videoUrl)
+            } catch {
+                print(error)
+            }
+            
+            self.dispatchActions(ytModel: ytdAction, ytError: ytError)
         }
     }
     
@@ -389,6 +396,6 @@ extension YoutubeDownloadManager : LogDelegate {
             YoutubeDownloaderModel.kAction : YoutubeDownloaderAction.proccessingVideoConverting.rawValue,
             YoutubeDownloaderModel.kMessage : message ?? "NAN"
         ])
-        self.mCallback?(ytManagerAction, nil)
+        dispatchActions(ytModel: ytManagerAction, ytError: nil)
     }
 }
