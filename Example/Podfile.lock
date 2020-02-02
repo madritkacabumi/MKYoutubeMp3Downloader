@@ -18,7 +18,7 @@ EXTERNAL SOURCES:
     :path: "~/Documents/Workspace/iOS/libraries/MKYoutubeMp3Downloader"
 
 SPEC CHECKSUMS:
-  MKYoutubeMp3Downloader: 25bcf503de52de0ff5995b2a10f044c322bf7c10
+  MKYoutubeMp3Downloader: db9427f7d61dc64e289e966cf8bb246d6dab85a7
   mobile-ffmpeg-full: af38edede256cb1d4fcbf10dddef39bf529ecd50
   Zip: 8877eede3dda76bcac281225c20e71c25270774c
 

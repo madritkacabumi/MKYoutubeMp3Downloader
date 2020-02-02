@@ -7,7 +7,6 @@
 //
 
 import Zip
-
 public class ServerManager {
     
     private static let bundleName = "MKYoutubeToMp3DownloaderZip"
@@ -22,7 +21,22 @@ public class ServerManager {
     
     internal static var serverUrl = "http://127.0.0.1:\(port)"
     
-    public var serverStarted = false
+    private var mServerStarted = false
+    
+    public var serverStarted : Bool {
+        get {
+            
+            if let nodeJsThread = nodejsThread {
+                return mServerStarted && nodeJsThread.isExecuting && !(nodeJsThread.isFinished || nodeJsThread.isCancelled)
+            }
+            
+            return mServerStarted
+        }
+        
+        set {
+            mServerStarted = newValue
+        }
+    }
     
     private var pendingServerStarted = false
     
@@ -40,12 +54,13 @@ public class ServerManager {
     public func startServer(callback : (() -> Void)? = nil){
         
         guard !pendingServerStarted else {
+            
             return
         }
         
         self.serverConnectCallback = callback
         guard !serverStarted else {
-            self.serverConnectCallback?()
+           self.serverConnectCallback?()
             return
         }
         
@@ -54,6 +69,10 @@ public class ServerManager {
         // Set 5MB of stack space for the Node.js thread.
         nodejsThread?.stackSize = 5 * 1024 * 1024
         nodejsThread?.start()
+    }
+    
+    public func stopServer(){
+        nodejsThread?.cancel()
     }
     
     /**
@@ -100,7 +119,6 @@ public class ServerManager {
             print(error.localizedDescription)
         }
         
-        
         folderUrl = tempFolder
     }
     
@@ -128,6 +146,7 @@ public class ServerManager {
         }
         
         NodeRunner.startEngine(withArguments: args)
+        serverStarted = false
     }
     
     /**

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import MKYoutubeMp3Downloader
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -32,6 +32,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
+    
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        ServerManager.shared.stopServer()
+    }
+    
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        ServerManager.shared.startServer()
+    }
+    
+    func applicationWillResignActive(_ application: UIApplication) {
+        
+    }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        
+    }
 
 }
 

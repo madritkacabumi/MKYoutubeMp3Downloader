@@ -8,4 +8,6 @@ target 'MKYoutubeMp3Downloader' do
   # Pods for MKYoutubeMp3Downloader
   pod 'Zip'
   pod 'mobile-ffmpeg-full'
+#pod 'LiquidCore'
+
 end

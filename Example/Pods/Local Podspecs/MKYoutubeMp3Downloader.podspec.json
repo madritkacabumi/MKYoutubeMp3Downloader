@@ -12,7 +12,7 @@
     "Madrit Kacabumi": "madrit.kacabumi@gmail.com"
   },
   "source": {
-    "path": "/Users/madritkacabumi/Documents/Workspace/iOS/libraries/MKYoutubeMp3Downloader/MKYoutubeMp3Downloader"
+    "path": "/Users/madrit/Documents/Workspace/iOS/libraries/MKYoutubeMp3Downloader/MKYoutubeMp3Downloader"
   },
   "platforms": {
     "ios": "11.2"
@@ -20,8 +20,7 @@
   "source_files": "MKYoutubeMp3Downloader/**/*",
   "resource_bundles": {
     "MKYoutubeToMp3DownloaderZip": [
-      "MKYoutubeMp3Downloader/Enviroment/NodejsServer/*.zip",
-      "MKYoutubeMp3Downloader/Enviroment/NodejsServer/server/app.js"
+      "MKYoutubeMp3Downloader/Enviroment/NodejsServer/*.zip"
     ]
   },
   "ios": {

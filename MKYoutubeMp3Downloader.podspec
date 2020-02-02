@@ -22,7 +22,7 @@ Then using a ffmpeg external swift library will convert the video in mp3.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Madrit Kacabumi' => 'madrit.kacabumi@gmail.com' }
   # s.source           = { :git => 'https://github.com/Madrit Kacabumi/MKYoutubeToMp3Downloader.git', :tag => s.version.to_s }
-    s.source         = { :path => '/Users/madritkacabumi/Documents/Workspace/iOS/libraries/MKYoutubeMp3Downloader/MKYoutubeMp3Downloader' }
+    s.source         = { :path => '/Users/madrit/Documents/Workspace/iOS/libraries/MKYoutubeMp3Downloader/MKYoutubeMp3Downloader' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '11.2'
@@ -38,5 +38,6 @@ Then using a ffmpeg external swift library will convert the video in mp3.
   s.ios.vendored_frameworks = 'libs/NodeMobile.framework'
   s.dependency 'Zip'
   s.dependency 'mobile-ffmpeg-full'
+  # s.dependency 'LiquidCore'
   s.static_framework = true
 end

@@ -12,6 +12,7 @@ import AVFoundation
 
 internal class ViewController: UIViewController {
     var player: AVAudioPlayer?
+    var mp3FilePath : URL?
     
     private var currentManager : YoutubeDownloadManager?
     
@@ -55,6 +56,7 @@ internal class ViewController: UIViewController {
     @IBOutlet weak var playPauseBtn: UIButton!
     @IBOutlet weak var consoleContainer: UIView!
     @IBOutlet weak var consoleText: UILabel!
+    @IBOutlet weak var shareBtnOutlet: UIButton!
     
     @IBAction func pasteBtnClicked(_ sender: UIButton) {
         youtubeInput.text = UIPasteboard.general.string
@@ -63,7 +65,12 @@ internal class ViewController: UIViewController {
     }
     
     @IBAction func downloadBtnPressed(_ sender: UIButton) {
-        guard ServerManager.shared.serverStarted, let youtubeUrl = youtubeInput.text, !youtubeUrl.isEmpty else { return }
+        guard ServerManager.shared.serverStarted, let youtubeUrl = youtubeInput.text, !youtubeUrl.isEmpty else {
+            if !ServerManager.shared.serverStarted {
+                startServer()
+            }
+            return
+        }
         
         guard !hasDownloadedVideo else {
             resetEverything()
@@ -83,6 +90,7 @@ internal class ViewController: UIViewController {
         resetEverything()
     }
     
+    
     @IBAction func playPauseBtnPressed(_ sender: UIButton) {
         guard let player = player else {
             resetEverything()
@@ -97,9 +105,20 @@ internal class ViewController: UIViewController {
         playPauseBtn.setImage(UIImage(systemName: player.isPlaying ? "pause" : "play"), for: .normal)
     }
     
+    @IBAction func shareBtnClick(_ sender: UIButton) {
+        guard let documentData = mp3FilePath, let audioFileName = currentManager?.ytVideoInfo?.title else { return }
+        
+        let activityController = UIActivityViewController(activityItems: [audioFileName, documentData], applicationActivities: nil)
+        self.present(activityController, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        startServer()
+    }
+    
+    private func startServer(){
+        //        resetEverything()
         if !ServerManager.shared.serverStarted {
             self.view.isUserInteractionEnabled = false
             self.progressIndicator.startAnimating()
@@ -143,53 +162,56 @@ internal class ViewController: UIViewController {
             return
         }
         
-        manager.getYoutubeVideoInfo() { ytManager, info, error in
-            
-            ytManager.downloadYoutubeVideo(callback: {[weak self] (ytDownloadModel, error) in
-                if let error = error {
-                    
-                    self?.progressIndicator.stopAnimating()
-                    self?.progressText.textColor = .red
-                    self?.progressText.text = error.message
-                    self?.view.isUserInteractionEnabled = true
-                } else if let ytModel = ytDownloadModel {
-                    switch ytModel.action {
-                    case .startVideoDownload:
-                        self?.progressText.text = "Starting video download"
-                        self?.consoleMessage = ""
-                    case .progressVideoDownload:
-                        self?.progressText.text = "Downloading"
-                        self?.consoleMessage = "Downloaded => \(ytModel.downloaded)\(ytModel.sizeLabel) of \(ytModel.totalSize)\(ytModel.sizeLabel) \n Total downloaded : \(ytModel.percent) \n  Estimated time left : \(ytModel.estimatedTimeLeft)"
-                    case .endVideoDownload:
-                        self?.progressText.text = "Video downloaded, Converting ...."
-                        self?.consoleMessage = ""
-                    case .startVideoConverting:
-                        self?.progressText.text = "Starting converting to mp3"
-                        self?.consoleMessage = ""
-                    case .proccessingVideoConverting:
-                        self?.progressText.text = "Converting to mp3"
-                        self?.consoleMessage = ytModel.message
-                    case .finishedVideoConverting:
-                        self?.progressText.text = "Mp3 successfully finished"
-                        self?.consoleMessage = ytModel.message
-                        self?.progressIndicator.stopAnimating()
-                        self?.hasDownloadedVideo = true
-                        self?.showPlayer(ytModel: ytModel)
-                        self?.view.isUserInteractionEnabled = true
-                    case .errorVideoDownload:
-                        self?.progressText.textColor = .red
-                        self?.progressText.text = ytModel.error
-                        self?.consoleMessage = ytModel.message
-                        self?.progressIndicator.stopAnimating()
-                        self?.view.isUserInteractionEnabled = true
-                    }
-                }
-            })
+        var fileName : String?
+        
+        if let title = manager.ytVideoInfo?.title {
+            fileName = "\(title)"
         }
+        
+        manager.downloadYoutubeVideo(youtubeVideoName: manager.ytVideoInfo?.title, callback: {[weak self] (ytDownloadModel, error) in
+            if let error = error {
+                self?.progressIndicator.stopAnimating()
+                self?.progressText.textColor = .red
+                self?.progressText.text = error.message
+                self?.view.isUserInteractionEnabled = true
+            } else if let ytModel = ytDownloadModel {
+                switch ytModel.action {
+                case .startVideoDownload:
+                    self?.progressText.text = "Starting video download"
+                    self?.consoleMessage = ""
+                case .progressVideoDownload:
+                    self?.progressText.text = "Downloading"
+                    self?.consoleMessage = "Downloaded => \(ytModel.downloaded)\(ytModel.sizeLabel) of \(ytModel.totalSize)\(ytModel.sizeLabel) \n Total downloaded : \(ytModel.percent) \n  Estimated time left : \(ytModel.estimatedTimeLeft)"
+                case .endVideoDownload:
+                    self?.progressText.text = "Video downloaded, Converting ...."
+                    self?.consoleMessage = ""
+                case .startVideoConverting:
+                    self?.progressText.text = "Starting converting to mp3"
+                    self?.consoleMessage = ""
+                case .proccessingVideoConverting:
+                    self?.progressText.text = "Converting to mp3"
+                    self?.consoleMessage = ytModel.message
+                case .finishedVideoConverting:
+                    self?.progressText.text = "Mp3 successfully finished"
+                    self?.mp3FilePath = ytModel.mp3AudioFile
+                    self?.consoleMessage = ytModel.message
+                    self?.progressIndicator.stopAnimating()
+                    self?.hasDownloadedVideo = true
+                    self?.showPlayer(ytModel: ytModel)
+                    self?.view.isUserInteractionEnabled = true
+                case .errorVideoDownload:
+                    self?.progressText.textColor = .red
+                    self?.progressText.text = ytModel.error
+                    self?.consoleMessage = ytModel.message
+                    self?.progressIndicator.stopAnimating()
+                    self?.view.isUserInteractionEnabled = true
+                }
+            }
+        })
     }
     
     private func showPlayer(ytModel : YoutubeDownloaderModel){
-        guard let youtubeMp3File = ytModel.mp3AudioFile else {
+        guard let youtubeMp3File = self.mp3FilePath else {
             progressText.text = "Error finding the file"
             return
         }
@@ -200,6 +222,7 @@ internal class ViewController: UIViewController {
             
             player = try AVAudioPlayer(contentsOf: youtubeMp3File, fileTypeHint: AVFileType.mp3.rawValue)
             playPauseBtn.isHidden = false
+            shareBtnOutlet.isHidden = false
             
         } catch let error {
             print(error.localizedDescription)
@@ -210,15 +233,17 @@ internal class ViewController: UIViewController {
     
     private func resetEverything(){
         currentManager = nil
+        mp3FilePath = nil
         hasInfo = false
         consoleMessage = ""
         progressText.text = "Enter or paste youtube url"
         currentManager = nil
         hasDownloadedVideo = false
-        playPauseBtn.setImage(UIImage(systemName:"pause"), for: .normal)
+        playPauseBtn.setImage(UIImage(systemName:"play"), for: .normal)
         playPauseBtn.isHidden = true
         player?.stop()
         player = nil
+        shareBtnOutlet.isHidden = true
     }
 }
 
