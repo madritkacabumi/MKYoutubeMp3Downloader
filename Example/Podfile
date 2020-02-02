@@ -1,10 +1,18 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
+def shared_pods
+    pod 'MKYoutubeMp3Downloader', :path => '~/Documents/Workspace/iOS/libraries/MKYoutubeMp3Downloader'
+end
+
 target 'MKYoutubeMp3DownloaderExample' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  shared_pods
+end
 
-  # Pods for MKYoutubeMp3DownloaderExample
-   pod 'MKYoutubeMp3Downloader', :path => '~/Documents/Workspace/iOS/libraries/MKYoutubeMp3Downloader'
+target 'MKYoutubeMp3DownloaderExampleShare' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  shared_pods
 end

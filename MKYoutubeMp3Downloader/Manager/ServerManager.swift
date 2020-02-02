@@ -17,7 +17,7 @@ public class ServerManager {
     
     var nodejsThread: Thread? = nil
     
-    internal static let port = 3000
+    internal static let port = 8080
     
     internal static var serverUrl = "http://127.0.0.1:\(port)"
     
@@ -139,7 +139,7 @@ public class ServerManager {
         let args = ["node", appJs.path]
         serverStarted = true
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
             self?.showGreetings()
             self?.serverConnectCallback?()
             self?.pendingServerStarted = false

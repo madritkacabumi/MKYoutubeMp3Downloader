@@ -155,7 +155,7 @@ public class YoutubeDownloadManager: NSObject {
         
         guard !isConsumed else {
             let error = YoutubeErrorModel(message: "This download object was consumed, create a new one")
-            mCallback?(nil, error)
+            dispatchActions(ytModel: nil, ytError: error)
             return
         }
         
@@ -338,8 +338,8 @@ public class YoutubeDownloadManager: NSObject {
         DispatchQueue.global(qos: .background).async {
             MobileFFmpeg.execute("-i \(videoUrl.path) -c:v mp3 \(audioUrl.path)")
             
-            let rc = MobileFFmpeg.getLastReturnCode()
-            let outPut = MobileFFmpeg.getLastCommandOutput() ?? "No execution output"
+            let rc = MobileFFmpegConfig.getLastReturnCode()
+            let outPut = MobileFFmpegConfig.getLastCommandOutput() ?? "No execution output"
             
             var ytError : YoutubeErrorModel?
             var ytdAction : YoutubeDownloaderModel?

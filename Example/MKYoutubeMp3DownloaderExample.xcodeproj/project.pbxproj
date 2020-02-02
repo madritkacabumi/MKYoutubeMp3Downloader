@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		20A53A46724FE50DA45FACF3 /* Pods_MKYoutubeMp3DownloaderExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4514268A49D3FD6C9D055CD /* Pods_MKYoutubeMp3DownloaderExample.framework */; };
+		2E12436023E6ECE300394FC3 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12435F23E6ECE300394FC3 /* ShareViewController.swift */; };
+		2E12436323E6ECE300394FC3 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E12436123E6ECE300394FC3 /* MainInterface.storyboard */; };
+		2E12436723E6ECE300394FC3 /* MKYoutubeMp3DownloaderExampleShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2E12435D23E6ECE300394FC3 /* MKYoutubeMp3DownloaderExampleShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2E12436C23E6F2D300394FC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7009374023B668B5006B7683 /* Assets.xcassets */; };
+		2E12436E23E6F34D00394FC3 /* YoutubeDownloaderExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12436D23E6F34D00394FC3 /* YoutubeDownloaderExtensionViewController.swift */; };
+		2E12436F23E6F36900394FC3 /* UIVIew+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703D4BD823C236570056DA74 /* UIVIew+Extensions.swift */; };
+		2E12437023E6F36900394FC3 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703D4BD623C21A2C0056DA74 /* UIImageView+Extensions.swift */; };
 		7009373823B668B3006B7683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7009373723B668B3006B7683 /* AppDelegate.swift */; };
 		7009373A23B668B3006B7683 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7009373923B668B3006B7683 /* SceneDelegate.swift */; };
 		7009373C23B668B3006B7683 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7009373B23B668B3006B7683 /* ViewController.swift */; };
@@ -16,9 +23,40 @@
 		7009374423B668B5006B7683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7009374223B668B5006B7683 /* LaunchScreen.storyboard */; };
 		703D4BD723C21A2C0056DA74 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703D4BD623C21A2C0056DA74 /* UIImageView+Extensions.swift */; };
 		703D4BD923C236570056DA74 /* UIVIew+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703D4BD823C236570056DA74 /* UIVIew+Extensions.swift */; };
+		828A0470229BEC5A84D28735 /* Pods_MKYoutubeMp3DownloaderExampleShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB6CD6A1F3786FD0C2C24C7 /* Pods_MKYoutubeMp3DownloaderExampleShare.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2E12436523E6ECE300394FC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7009372C23B668B3006B7683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E12435C23E6ECE300394FC3;
+			remoteInfo = MKYoutubeMp3DownloaderExampleShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2E12436823E6ECE300394FC3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2E12436723E6ECE300394FC3 /* MKYoutubeMp3DownloaderExampleShare.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0AB6CD6A1F3786FD0C2C24C7 /* Pods_MKYoutubeMp3DownloaderExampleShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKYoutubeMp3DownloaderExampleShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E12435D23E6ECE300394FC3 /* MKYoutubeMp3DownloaderExampleShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MKYoutubeMp3DownloaderExampleShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E12435F23E6ECE300394FC3 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		2E12436223E6ECE300394FC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		2E12436423E6ECE300394FC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E12436D23E6F34D00394FC3 /* YoutubeDownloaderExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeDownloaderExtensionViewController.swift; sourceTree = "<group>"; };
 		7009373423B668B3006B7683 /* MKYoutubeMp3DownloaderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKYoutubeMp3DownloaderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7009373723B668B3006B7683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7009373923B668B3006B7683 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,11 +68,21 @@
 		703D4BD623C21A2C0056DA74 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		703D4BD823C236570056DA74 /* UIVIew+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+Extensions.swift"; sourceTree = "<group>"; };
 		73884F1172838E8E847C5ECA /* Pods-MKYoutubeMp3DownloaderExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKYoutubeMp3DownloaderExample.release.xcconfig"; path = "Target Support Files/Pods-MKYoutubeMp3DownloaderExample/Pods-MKYoutubeMp3DownloaderExample.release.xcconfig"; sourceTree = "<group>"; };
+		A7951F09CDC55A6F0827EC80 /* Pods-MKYoutubeMp3DownloaderExampleShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKYoutubeMp3DownloaderExampleShare.release.xcconfig"; path = "Target Support Files/Pods-MKYoutubeMp3DownloaderExampleShare/Pods-MKYoutubeMp3DownloaderExampleShare.release.xcconfig"; sourceTree = "<group>"; };
 		C4514268A49D3FD6C9D055CD /* Pods_MKYoutubeMp3DownloaderExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKYoutubeMp3DownloaderExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C51A52930D058D2979FB4992 /* Pods-MKYoutubeMp3DownloaderExampleShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKYoutubeMp3DownloaderExampleShare.debug.xcconfig"; path = "Target Support Files/Pods-MKYoutubeMp3DownloaderExampleShare/Pods-MKYoutubeMp3DownloaderExampleShare.debug.xcconfig"; sourceTree = "<group>"; };
 		F608B9D96A07FB7807768C09 /* Pods-MKYoutubeMp3DownloaderExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKYoutubeMp3DownloaderExample.debug.xcconfig"; path = "Target Support Files/Pods-MKYoutubeMp3DownloaderExample/Pods-MKYoutubeMp3DownloaderExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2E12435A23E6ECE300394FC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				828A0470229BEC5A84D28735 /* Pods_MKYoutubeMp3DownloaderExampleShare.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7009373123B668B3006B7683 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,14 +99,28 @@
 			children = (
 				F608B9D96A07FB7807768C09 /* Pods-MKYoutubeMp3DownloaderExample.debug.xcconfig */,
 				73884F1172838E8E847C5ECA /* Pods-MKYoutubeMp3DownloaderExample.release.xcconfig */,
+				C51A52930D058D2979FB4992 /* Pods-MKYoutubeMp3DownloaderExampleShare.debug.xcconfig */,
+				A7951F09CDC55A6F0827EC80 /* Pods-MKYoutubeMp3DownloaderExampleShare.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		2E12435E23E6ECE300394FC3 /* MKYoutubeMp3DownloaderExampleShare */ = {
+			isa = PBXGroup;
+			children = (
+				2E12435F23E6ECE300394FC3 /* ShareViewController.swift */,
+				2E12436D23E6F34D00394FC3 /* YoutubeDownloaderExtensionViewController.swift */,
+				2E12436123E6ECE300394FC3 /* MainInterface.storyboard */,
+				2E12436423E6ECE300394FC3 /* Info.plist */,
+			);
+			path = MKYoutubeMp3DownloaderExampleShare;
 			sourceTree = "<group>";
 		};
 		7009372B23B668B3006B7683 = {
 			isa = PBXGroup;
 			children = (
 				7009373623B668B3006B7683 /* MKYoutubeMp3DownloaderExample */,
+				2E12435E23E6ECE300394FC3 /* MKYoutubeMp3DownloaderExampleShare */,
 				7009373523B668B3006B7683 /* Products */,
 				0647433A3BE6DD7152ED9C1C /* Pods */,
 				C02421EEB978BD194739FD8E /* Frameworks */,
@@ -69,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				7009373423B668B3006B7683 /* MKYoutubeMp3DownloaderExample.app */,
+				2E12435D23E6ECE300394FC3 /* MKYoutubeMp3DownloaderExampleShare.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				C4514268A49D3FD6C9D055CD /* Pods_MKYoutubeMp3DownloaderExample.framework */,
+				0AB6CD6A1F3786FD0C2C24C7 /* Pods_MKYoutubeMp3DownloaderExampleShare.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -108,6 +172,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2E12435C23E6ECE300394FC3 /* MKYoutubeMp3DownloaderExampleShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E12436B23E6ECE300394FC3 /* Build configuration list for PBXNativeTarget "MKYoutubeMp3DownloaderExampleShare" */;
+			buildPhases = (
+				6DD5EE99229A5E6E2D5A57EF /* [CP] Check Pods Manifest.lock */,
+				2E12435923E6ECE300394FC3 /* Sources */,
+				2E12435A23E6ECE300394FC3 /* Frameworks */,
+				2E12435B23E6ECE300394FC3 /* Resources */,
+				FEDF341B8F69425DA6BF7B06 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MKYoutubeMp3DownloaderExampleShare;
+			productName = MKYoutubeMp3DownloaderExampleShare;
+			productReference = 2E12435D23E6ECE300394FC3 /* MKYoutubeMp3DownloaderExampleShare.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		7009373323B668B3006B7683 /* MKYoutubeMp3DownloaderExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7009374823B668B5006B7683 /* Build configuration list for PBXNativeTarget "MKYoutubeMp3DownloaderExample" */;
@@ -116,12 +199,14 @@
 				7009373023B668B3006B7683 /* Sources */,
 				7009373123B668B3006B7683 /* Frameworks */,
 				7009373223B668B3006B7683 /* Resources */,
-				7778538D29D6AFA4A10E725E /* [CP] Embed Pods Frameworks */,
-				FBD4B953FF2AD21FC313057F /* [CP] Copy Pods Resources */,
+				2E12436823E6ECE300394FC3 /* Embed App Extensions */,
+				5B6C298CC76DBE1A8B44413C /* [CP] Embed Pods Frameworks */,
+				9303231418144B0184F65144 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2E12436623E6ECE300394FC3 /* PBXTargetDependency */,
 			);
 			name = MKYoutubeMp3DownloaderExample;
 			productName = MKYoutubeMp3DownloaderExample;
@@ -138,6 +223,9 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Madrit Kacabumi";
 				TargetAttributes = {
+					2E12435C23E6ECE300394FC3 = {
+						CreatedOnToolsVersion = 11.3;
+					};
 					7009373323B668B3006B7683 = {
 						CreatedOnToolsVersion = 11.3;
 					};
@@ -157,11 +245,21 @@
 			projectRoot = "";
 			targets = (
 				7009373323B668B3006B7683 /* MKYoutubeMp3DownloaderExample */,
+				2E12435C23E6ECE300394FC3 /* MKYoutubeMp3DownloaderExampleShare */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2E12435B23E6ECE300394FC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E12436C23E6F2D300394FC3 /* Assets.xcassets in Resources */,
+				2E12436323E6ECE300394FC3 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7009373223B668B3006B7683 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -175,7 +273,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7778538D29D6AFA4A10E725E /* [CP] Embed Pods Frameworks */ = {
+		5B6C298CC76DBE1A8B44413C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -190,6 +288,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MKYoutubeMp3DownloaderExample/Pods-MKYoutubeMp3DownloaderExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DD5EE99229A5E6E2D5A57EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MKYoutubeMp3DownloaderExampleShare-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9303231418144B0184F65144 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MKYoutubeMp3DownloaderExample/Pods-MKYoutubeMp3DownloaderExample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MKYoutubeMp3DownloaderExample/Pods-MKYoutubeMp3DownloaderExample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MKYoutubeMp3DownloaderExample/Pods-MKYoutubeMp3DownloaderExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ECABCB78EBF1C2424321A224 /* [CP] Check Pods Manifest.lock */ = {
@@ -214,26 +351,37 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FBD4B953FF2AD21FC313057F /* [CP] Copy Pods Resources */ = {
+		FEDF341B8F69425DA6BF7B06 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MKYoutubeMp3DownloaderExample/Pods-MKYoutubeMp3DownloaderExample-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MKYoutubeMp3DownloaderExampleShare/Pods-MKYoutubeMp3DownloaderExampleShare-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MKYoutubeMp3DownloaderExample/Pods-MKYoutubeMp3DownloaderExample-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-MKYoutubeMp3DownloaderExampleShare/Pods-MKYoutubeMp3DownloaderExampleShare-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MKYoutubeMp3DownloaderExample/Pods-MKYoutubeMp3DownloaderExample-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MKYoutubeMp3DownloaderExampleShare/Pods-MKYoutubeMp3DownloaderExampleShare-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2E12435923E6ECE300394FC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E12436F23E6F36900394FC3 /* UIVIew+Extensions.swift in Sources */,
+				2E12436023E6ECE300394FC3 /* ShareViewController.swift in Sources */,
+				2E12437023E6F36900394FC3 /* UIImageView+Extensions.swift in Sources */,
+				2E12436E23E6F34D00394FC3 /* YoutubeDownloaderExtensionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7009373023B668B3006B7683 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -248,7 +396,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2E12436623E6ECE300394FC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E12435C23E6ECE300394FC3 /* MKYoutubeMp3DownloaderExampleShare */;
+			targetProxy = 2E12436523E6ECE300394FC3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		2E12436123E6ECE300394FC3 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E12436223E6ECE300394FC3 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		7009373D23B668B3006B7683 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -268,6 +432,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2E12436923E6ECE300394FC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C51A52930D058D2979FB4992 /* Pods-MKYoutubeMp3DownloaderExampleShare.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B7YQSM2767;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = MKYoutubeMp3DownloaderExampleShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madritkacabumi.example.MKYoutubeMp3DownloaderExample.MKYoutubeMp3DownloaderExampleShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E12436A23E6ECE300394FC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7951F09CDC55A6F0827EC80 /* Pods-MKYoutubeMp3DownloaderExampleShare.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B7YQSM2767;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = MKYoutubeMp3DownloaderExampleShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madritkacabumi.example.MKYoutubeMp3DownloaderExample.MKYoutubeMp3DownloaderExampleShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		7009374623B668B5006B7683 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -386,6 +592,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F608B9D96A07FB7807768C09 /* Pods-MKYoutubeMp3DownloaderExample.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7YQSM2767;
@@ -406,6 +613,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 73884F1172838E8E847C5ECA /* Pods-MKYoutubeMp3DownloaderExample.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7YQSM2767;
@@ -425,6 +633,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2E12436B23E6ECE300394FC3 /* Build configuration list for PBXNativeTarget "MKYoutubeMp3DownloaderExampleShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E12436923E6ECE300394FC3 /* Debug */,
+				2E12436A23E6ECE300394FC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7009372F23B668B3006B7683 /* Build configuration list for PBXProject "MKYoutubeMp3DownloaderExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
