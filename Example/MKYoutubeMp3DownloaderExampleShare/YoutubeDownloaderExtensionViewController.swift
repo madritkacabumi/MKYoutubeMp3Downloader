@@ -10,6 +10,7 @@ import UIKit
 import MKYoutubeMp3Downloader
 import AVFoundation
 import MobileCoreServices
+
 internal class YoutubeDownloaderExtensionViewController: UIViewController {
     var player: AVAudioPlayer?
     var mp3FilePath : URL?
@@ -17,7 +18,7 @@ internal class YoutubeDownloaderExtensionViewController: UIViewController {
     var youtubeUrl = "";
     
     private var currentManager : YoutubeDownloadManager?
-
+    
     private var hasInfo = false {
         didSet{
             guard hasInfo != oldValue else { return }
@@ -63,7 +64,22 @@ internal class YoutubeDownloaderExtensionViewController: UIViewController {
     
     @IBAction func shareBtnClick(_ sender: UIButton) {
         guard let documentData = mp3FilePath, let audioFileName = currentManager?.ytVideoInfo?.title else { return }
-        let activityController = UIActivityViewController(activityItems: [audioFileName, documentData], applicationActivities: nil)
+        
+        // we can directly use `mp3FilePath` for file path to share in *UIActivityViewController*
+        // but the file filename will have and and encoded title
+        // so we create a temporary custom file
+        let fileManager = FileManager.default
+        
+        let tempFile = fileManager.temporaryDirectory.appendingPathComponent("/\(audioFileName).mp3", isDirectory: false)
+        let data = NSData(contentsOf: documentData)
+        
+        data?.write(to: tempFile, atomically: true)
+        
+        let activityController = UIActivityViewController(activityItems: [audioFileName, tempFile], applicationActivities: nil)
+        activityController.completionWithItemsHandler = { type , isFinished, fun, error in
+            try? fileManager.removeItem(at: tempFile)
+        }
+        
         self.present(activityController, animated: true, completion: nil)
     }
     
@@ -187,7 +203,8 @@ internal class YoutubeDownloaderExtensionViewController: UIViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-       DispatchQueue.main.asyncAfter(deadline: .now() + 1){
+        currentManager?.cleanUp()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1){
             exit(0)
         }
     }

@@ -1,5 +1,5 @@
 PODS:
-  - mobile-ffmpeg-full (4.3)
+  - mobile-ffmpeg-full (4.3.1)
   - Zip (1.1.0)
 
 DEPENDENCIES:
@@ -12,7 +12,7 @@ SPEC REPOS:
     - Zip
 
 SPEC CHECKSUMS:
-  mobile-ffmpeg-full: af38edede256cb1d4fcbf10dddef39bf529ecd50
+  mobile-ffmpeg-full: 0da7d44a6f9d5573daec359dafa7537f4682278f
   Zip: 8877eede3dda76bcac281225c20e71c25270774c
 
 PODFILE CHECKSUM: e424892f5268c0af478bf27bdccc2e6bbd220cfc

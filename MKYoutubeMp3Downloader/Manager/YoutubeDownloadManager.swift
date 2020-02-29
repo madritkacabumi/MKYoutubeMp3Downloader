@@ -32,15 +32,20 @@ public class YoutubeDownloadManager: NSObject {
     /* Check if this download is consumed */
     public var isConsumed = false
     
-     /* Downloading and converting callback */
+    /* Downloading and converting callback */
     private var mCallback : YoutubeDownloaderHandler?
     
     /* stored info object for youtube video */
     public var ytVideoInfo : YoutubeDownloaderInfoModel?
     
-     /* stored response from node backend regarding downloading info actions file */
+    /* stored response from node backend regarding downloading info actions file */
     private var ytDataModel : YoutubeDownloaderDataModel?
     
+     /* downloaded video path */
+    private var videoPath : String?
+    
+     /* converted audio path */
+    private var audioPath : String?
     
     public init(youtubeUrl : String) {
         self.youtubeUrl = youtubeUrl
@@ -224,17 +229,17 @@ public class YoutubeDownloadManager: NSObject {
         
         guard let dateComponentsSeconds = Calendar.current.dateComponents([.second], from: self.startedDownloadTime, to: Date()).second else {
             self.isConsumed = false
-            
             let error = YoutubeErrorModel(message: "Invalid timeout calculations due to `startDownloadTime` and current time")
             dispatchActions(ytModel: nil, ytError: error)
+            cleanUp()
             return
         }
         
         guard dateComponentsSeconds <= timeout else {
             self.isConsumed = false
-            
             let error = YoutubeErrorModel(message: "Request timeout")
             dispatchActions(ytModel: nil, ytError: error)
+            cleanUp()
             return
         }
         
@@ -247,7 +252,7 @@ public class YoutubeDownloadManager: NSObject {
                 
                 let error = YoutubeErrorModel(message: "Could not read the actions file, file is missing")
                 dispatchActions(ytModel: nil, ytError: error)
-                
+                cleanUp()
                 return
             }
             dispatchProgressUpdate()
@@ -284,6 +289,7 @@ public class YoutubeDownloadManager: NSObject {
                 self.isConsumed = false
                 let error = YoutubeErrorModel(message: "Could not read the actions file, could not parse it, parse went bad")
                 dispatchActions(ytModel: nil, ytError: error)
+                cleanUp()
                 return
             }
             
@@ -294,6 +300,7 @@ public class YoutubeDownloadManager: NSObject {
     /// Will call after a certain amount of time the the #updateProgress Function
     ///
     private func dispatchProgressUpdate(){
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + readFileRefreshRate) {
             self.updateProgress()
         }
@@ -313,6 +320,7 @@ public class YoutubeDownloadManager: NSObject {
     ///     - FFMpeg thrown errors
     ///
     private func convertVideoToMp3(videoPath : String?){
+        
         MobileFFmpegConfig.setLogDelegate(self)
         MobileFFmpegConfig.setLogLevel(AV_LOG_VERBOSE)
         
@@ -321,12 +329,17 @@ public class YoutubeDownloadManager: NSObject {
         guard let videoPath = videoPath, fileManager.fileExists(atPath: videoPath) else {
             let error = YoutubeErrorModel(message: "Downloaded video file is missing")
             dispatchActions(ytModel: nil, ytError: error)
+            cleanUp()
             return
         }
+        
+        self.videoPath = videoPath
         
         let videoUrl = URL(fileURLWithPath: videoPath)
         let audioUrlString = videoUrl.absoluteString.replacingOccurrences(of: videoUrl.pathExtension, with: "mp3")
         let audioUrl = URL(string: audioUrlString)!
+        
+        self.audioPath = audioUrl.path
         
         let ytManagerAction = YoutubeDownloaderModel(params: [
             YoutubeDownloaderModel.kAction : YoutubeDownloaderAction.startVideoConverting.rawValue,
@@ -336,9 +349,8 @@ public class YoutubeDownloadManager: NSObject {
         dispatchActions(ytModel: ytManagerAction, ytError: nil)
         
         DispatchQueue.global(qos: .background).async {
-            MobileFFmpeg.execute("-i \(videoUrl.path) -c:v mp3 \(audioUrl.path)")
+            let rc = MobileFFmpeg.execute("-i \(videoUrl.path) -c:v mp3 \(audioUrl.path)")
             
-            let rc = MobileFFmpegConfig.getLastReturnCode()
             let outPut = MobileFFmpegConfig.getLastCommandOutput() ?? "No execution output"
             
             var ytError : YoutubeErrorModel?
@@ -354,11 +366,15 @@ public class YoutubeDownloadManager: NSObject {
             default:
                 let errorMsg = "Command execution failed with rc=\(rc) and output=\(outPut)"
                 ytError = YoutubeErrorModel(message: errorMsg)
+                self.cleanUp()
             }
             
-            //delete youtube video, we dont need it anymore
+            //delete youtube video, and the actions file we dont need them anymore
             do {
                 try fileManager.removeItem(at: videoUrl)
+                if let actionsFile = self.ytDataModel?.actions_file {
+                    try fileManager.removeItem(atPath: actionsFile)
+                }
             } catch {
                 print(error)
             }
@@ -385,13 +401,43 @@ public class YoutubeDownloadManager: NSObject {
             self.mCallback?(ytModel, ytError)
         }
     }
+    
+    
+    /**
+        # Will cleanup all the files used for the download & convertion flow.
+     
+        ## Items that will be deleted:
+
+        1. Actions file used from the node backend if exists.
+        2. Video file in case the video was successfully downloaded but not deleted.
+        3. Audio mp3 file if successfully converted.
+    */
+    public func cleanUp() {
+        
+        let fileManager = FileManager.default
+        
+        //delete the actions file
+        if let actionsFile = ytDataModel?.actions_file, fileManager.fileExists(atPath: actionsFile) {
+            try? fileManager.removeItem(atPath: actionsFile)
+        }
+        
+        //delete the video file in case is still there
+        if let videoPath = videoPath, fileManager.fileExists(atPath: videoPath){
+              try? fileManager.removeItem(atPath: videoPath)
+        }
+        
+        //delete the audio file , in case is successfully converted
+        if let audioPath = audioPath, fileManager.fileExists(atPath: audioPath){
+              try? fileManager.removeItem(atPath: audioPath)
+        }
+    }
 }
 
 //MARK: - LogDelegate
 extension YoutubeDownloadManager : LogDelegate {
     
     public func logCallback(_ level: Int32, _ message: String!) {
-
+        
         let ytManagerAction = YoutubeDownloaderModel(params: [
             YoutubeDownloaderModel.kAction : YoutubeDownloaderAction.proccessingVideoConverting.rawValue,
             YoutubeDownloaderModel.kMessage : message ?? "NAN"

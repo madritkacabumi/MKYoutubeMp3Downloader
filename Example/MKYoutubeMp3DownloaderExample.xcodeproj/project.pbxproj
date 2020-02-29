@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		20A53A46724FE50DA45FACF3 /* Pods_MKYoutubeMp3DownloaderExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4514268A49D3FD6C9D055CD /* Pods_MKYoutubeMp3DownloaderExample.framework */; };
 		2E12436023E6ECE300394FC3 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12435F23E6ECE300394FC3 /* ShareViewController.swift */; };
 		2E12436323E6ECE300394FC3 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E12436123E6ECE300394FC3 /* MainInterface.storyboard */; };
 		2E12436723E6ECE300394FC3 /* MKYoutubeMp3DownloaderExampleShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2E12435D23E6ECE300394FC3 /* MKYoutubeMp3DownloaderExampleShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -15,6 +14,8 @@
 		2E12436E23E6F34D00394FC3 /* YoutubeDownloaderExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E12436D23E6F34D00394FC3 /* YoutubeDownloaderExtensionViewController.swift */; };
 		2E12436F23E6F36900394FC3 /* UIVIew+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703D4BD823C236570056DA74 /* UIVIew+Extensions.swift */; };
 		2E12437023E6F36900394FC3 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703D4BD623C21A2C0056DA74 /* UIImageView+Extensions.swift */; };
+		2EBDF62F240A9DF200D9C5A8 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBDF62E240A9DF200D9C5A8 /* PreviewViewController.swift */; };
+		5CBD41B1714599845F3741BB /* libPods-MKYoutubeMp3DownloaderExampleShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F198C524AE0BB9855267E81 /* libPods-MKYoutubeMp3DownloaderExampleShare.a */; };
 		7009373823B668B3006B7683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7009373723B668B3006B7683 /* AppDelegate.swift */; };
 		7009373A23B668B3006B7683 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7009373923B668B3006B7683 /* SceneDelegate.swift */; };
 		7009373C23B668B3006B7683 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7009373B23B668B3006B7683 /* ViewController.swift */; };
@@ -23,7 +24,7 @@
 		7009374423B668B5006B7683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7009374223B668B5006B7683 /* LaunchScreen.storyboard */; };
 		703D4BD723C21A2C0056DA74 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703D4BD623C21A2C0056DA74 /* UIImageView+Extensions.swift */; };
 		703D4BD923C236570056DA74 /* UIVIew+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703D4BD823C236570056DA74 /* UIVIew+Extensions.swift */; };
-		828A0470229BEC5A84D28735 /* Pods_MKYoutubeMp3DownloaderExampleShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB6CD6A1F3786FD0C2C24C7 /* Pods_MKYoutubeMp3DownloaderExampleShare.framework */; };
+		F36B7354ED6F8537E452B30E /* libPods-MKYoutubeMp3DownloaderExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6F28363C235F881373EA23 /* libPods-MKYoutubeMp3DownloaderExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,12 +52,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0AB6CD6A1F3786FD0C2C24C7 /* Pods_MKYoutubeMp3DownloaderExampleShare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKYoutubeMp3DownloaderExampleShare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E12435D23E6ECE300394FC3 /* MKYoutubeMp3DownloaderExampleShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MKYoutubeMp3DownloaderExampleShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E12435F23E6ECE300394FC3 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		2E12436223E6ECE300394FC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		2E12436423E6ECE300394FC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E12436D23E6F34D00394FC3 /* YoutubeDownloaderExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeDownloaderExtensionViewController.swift; sourceTree = "<group>"; };
+		2EBDF62E240A9DF200D9C5A8 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		7009373423B668B3006B7683 /* MKYoutubeMp3DownloaderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKYoutubeMp3DownloaderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7009373723B668B3006B7683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7009373923B668B3006B7683 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,9 +69,10 @@
 		703D4BD623C21A2C0056DA74 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		703D4BD823C236570056DA74 /* UIVIew+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+Extensions.swift"; sourceTree = "<group>"; };
 		73884F1172838E8E847C5ECA /* Pods-MKYoutubeMp3DownloaderExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKYoutubeMp3DownloaderExample.release.xcconfig"; path = "Target Support Files/Pods-MKYoutubeMp3DownloaderExample/Pods-MKYoutubeMp3DownloaderExample.release.xcconfig"; sourceTree = "<group>"; };
+		8F198C524AE0BB9855267E81 /* libPods-MKYoutubeMp3DownloaderExampleShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MKYoutubeMp3DownloaderExampleShare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7951F09CDC55A6F0827EC80 /* Pods-MKYoutubeMp3DownloaderExampleShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKYoutubeMp3DownloaderExampleShare.release.xcconfig"; path = "Target Support Files/Pods-MKYoutubeMp3DownloaderExampleShare/Pods-MKYoutubeMp3DownloaderExampleShare.release.xcconfig"; sourceTree = "<group>"; };
-		C4514268A49D3FD6C9D055CD /* Pods_MKYoutubeMp3DownloaderExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKYoutubeMp3DownloaderExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C51A52930D058D2979FB4992 /* Pods-MKYoutubeMp3DownloaderExampleShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKYoutubeMp3DownloaderExampleShare.debug.xcconfig"; path = "Target Support Files/Pods-MKYoutubeMp3DownloaderExampleShare/Pods-MKYoutubeMp3DownloaderExampleShare.debug.xcconfig"; sourceTree = "<group>"; };
+		EF6F28363C235F881373EA23 /* libPods-MKYoutubeMp3DownloaderExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MKYoutubeMp3DownloaderExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F608B9D96A07FB7807768C09 /* Pods-MKYoutubeMp3DownloaderExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKYoutubeMp3DownloaderExample.debug.xcconfig"; path = "Target Support Files/Pods-MKYoutubeMp3DownloaderExample/Pods-MKYoutubeMp3DownloaderExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				828A0470229BEC5A84D28735 /* Pods_MKYoutubeMp3DownloaderExampleShare.framework in Frameworks */,
+				5CBD41B1714599845F3741BB /* libPods-MKYoutubeMp3DownloaderExampleShare.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20A53A46724FE50DA45FACF3 /* Pods_MKYoutubeMp3DownloaderExample.framework in Frameworks */,
+				F36B7354ED6F8537E452B30E /* libPods-MKYoutubeMp3DownloaderExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,7 @@
 				7009373723B668B3006B7683 /* AppDelegate.swift */,
 				7009373923B668B3006B7683 /* SceneDelegate.swift */,
 				7009373B23B668B3006B7683 /* ViewController.swift */,
+				2EBDF62E240A9DF200D9C5A8 /* PreviewViewController.swift */,
 				7009373D23B668B3006B7683 /* Main.storyboard */,
 				7009374223B668B5006B7683 /* LaunchScreen.storyboard */,
 				7009374023B668B5006B7683 /* Assets.xcassets */,
@@ -163,8 +166,8 @@
 		C02421EEB978BD194739FD8E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C4514268A49D3FD6C9D055CD /* Pods_MKYoutubeMp3DownloaderExample.framework */,
-				0AB6CD6A1F3786FD0C2C24C7 /* Pods_MKYoutubeMp3DownloaderExampleShare.framework */,
+				EF6F28363C235F881373EA23 /* libPods-MKYoutubeMp3DownloaderExample.a */,
+				8F198C524AE0BB9855267E81 /* libPods-MKYoutubeMp3DownloaderExampleShare.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 				7009373823B668B3006B7683 /* AppDelegate.swift in Sources */,
 				703D4BD723C21A2C0056DA74 /* UIImageView+Extensions.swift in Sources */,
 				7009373A23B668B3006B7683 /* SceneDelegate.swift in Sources */,
+				2EBDF62F240A9DF200D9C5A8 /* PreviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

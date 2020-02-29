@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EBDF633240AAE8C00D9C5A8 /* NodeMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E75B1F23B65526009D9BC2 /* NodeMobile.framework */; };
+		2EBDF634240AAE8C00D9C5A8 /* NodeMobile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 70E75B1F23B65526009D9BC2 /* NodeMobile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7009372A23B65CC3006B7683 /* NodeRunner.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7009372923B65CC3006B7683 /* NodeRunner.mm */; };
-		70E75B2023B65526009D9BC2 /* NodeMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E75B1F23B65526009D9BC2 /* NodeMobile.framework */; };
 		70E9D6C523B416DD005BA49B /* MKYoutubeMp3Downloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 70E9D6C323B416DD005BA49B /* MKYoutubeMp3Downloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70E9D6DD23B417A6005BA49B /* YoutubeDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E9D6CD23B417A5005BA49B /* YoutubeDownloadManager.swift */; };
 		70E9D6DE23B417A6005BA49B /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E9D6CE23B417A5005BA49B /* ServerManager.swift */; };
@@ -20,11 +21,26 @@
 		70E9D6E623B417A6005BA49B /* YoutubeDownloaderInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E9D6D923B417A6005BA49B /* YoutubeDownloaderInfoModel.swift */; };
 		70E9D6E723B417A7005BA49B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E9D6DB23B417A6005BA49B /* Utils.swift */; };
 		70E9D6E923B42235005BA49B /* YoutubeDownloaderAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E9D6E823B42235005BA49B /* YoutubeDownloaderAction.swift */; };
-		FDC40DBE03374D9793AD1064 /* Pods_MKYoutubeMp3Downloader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A532261B5B6FDB7CDF83D8 /* Pods_MKYoutubeMp3Downloader.framework */; };
+		FE79CF7CF151764B0A35EBC8 /* Pods_MKYoutubeMp3Downloader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B8935886BD1D5FBE3A2DB /* Pods_MKYoutubeMp3Downloader.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2EBDF635240AAE8C00D9C5A8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2EBDF634240AAE8C00D9C5A8 /* NodeMobile.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		29857CF2232704077ED69C6B /* Pods-MKYoutubeMp3Downloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKYoutubeMp3Downloader.release.xcconfig"; path = "Target Support Files/Pods-MKYoutubeMp3Downloader/Pods-MKYoutubeMp3Downloader.release.xcconfig"; sourceTree = "<group>"; };
+		377B8935886BD1D5FBE3A2DB /* Pods_MKYoutubeMp3Downloader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKYoutubeMp3Downloader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7009372923B65CC3006B7683 /* NodeRunner.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NodeRunner.mm; sourceTree = "<group>"; };
 		70E75B1F23B65526009D9BC2 /* NodeMobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NodeMobile.framework; path = libs/NodeMobile.framework; sourceTree = SOURCE_ROOT; };
 		70E9D6C023B416DD005BA49B /* MKYoutubeMp3Downloader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MKYoutubeMp3Downloader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,7 +56,6 @@
 		70E9D6D923B417A6005BA49B /* YoutubeDownloaderInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeDownloaderInfoModel.swift; sourceTree = "<group>"; };
 		70E9D6DB23B417A6005BA49B /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		70E9D6E823B42235005BA49B /* YoutubeDownloaderAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeDownloaderAction.swift; sourceTree = "<group>"; };
-		C2A532261B5B6FDB7CDF83D8 /* Pods_MKYoutubeMp3Downloader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKYoutubeMp3Downloader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA3AEEEF49EC8759831DB662 /* Pods-MKYoutubeMp3Downloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKYoutubeMp3Downloader.debug.xcconfig"; path = "Target Support Files/Pods-MKYoutubeMp3Downloader/Pods-MKYoutubeMp3Downloader.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,8 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70E75B2023B65526009D9BC2 /* NodeMobile.framework in Frameworks */,
-				FDC40DBE03374D9793AD1064 /* Pods_MKYoutubeMp3Downloader.framework in Frameworks */,
+				2EBDF633240AAE8C00D9C5A8 /* NodeMobile.framework in Frameworks */,
+				FE79CF7CF151764B0A35EBC8 /* Pods_MKYoutubeMp3Downloader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +163,7 @@
 		C3108D5F8309D667A8B54A2D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C2A532261B5B6FDB7CDF83D8 /* Pods_MKYoutubeMp3Downloader.framework */,
+				377B8935886BD1D5FBE3A2DB /* Pods_MKYoutubeMp3Downloader.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -177,6 +192,7 @@
 				70E9D6BC23B416DD005BA49B /* Sources */,
 				70E9D6BD23B416DD005BA49B /* Frameworks */,
 				70E9D6BE23B416DD005BA49B /* Resources */,
+				2EBDF635240AAE8C00D9C5A8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

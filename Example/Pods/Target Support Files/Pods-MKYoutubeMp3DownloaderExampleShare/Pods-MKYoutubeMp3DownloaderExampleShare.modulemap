@@ -1,4 +1,4 @@
-framework module Pods_MKYoutubeMp3DownloaderExampleShare {
+module Pods_MKYoutubeMp3DownloaderExampleShare {
   umbrella header "Pods-MKYoutubeMp3DownloaderExampleShare-umbrella.h"
 
   export *

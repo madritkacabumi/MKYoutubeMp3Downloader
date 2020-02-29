@@ -17,7 +17,7 @@ public class ServerManager {
     
     var nodejsThread: Thread? = nil
     
-    internal static let port = 8080
+    internal static let port = 3000
     
     internal static var serverUrl = "http://127.0.0.1:\(port)"
     

@@ -90,18 +90,18 @@ extension UIView {
         }
     }
     
-    public static func instanceFromNib(name:String, fromBundle bundle : Bundle? = Bundle.main) -> UIView {
+    internal static func instanceFromNib(name:String, fromBundle bundle : Bundle? = Bundle.main) -> UIView {
         return UINib(nibName: name, bundle: nil).instantiate(withOwner: self, options: nil)[0] as! UIView
     }
     
-    public func clearAllSuBViews(){
+    internal func clearAllSuBViews(){
         for view in self.subviews{
             view.removeFromSuperview()
         }
     }
     
     // convert view into image
-    public func toImage() -> UIImage {
+    internal func toImage() -> UIImage {
         
         UIGraphicsBeginImageContextWithOptions(bounds.size, isOpaque, 0)
         guard let context = UIGraphicsGetCurrentContext()
@@ -115,12 +115,12 @@ extension UIView {
     }
     
     // loop recursively through views and get an array
-    public func subviewsRecursive() -> [UIView] {
+    internal func subviewsRecursive() -> [UIView] {
         
         return subviews + subviews.flatMap { $0.subviewsRecursive() }
     }
     
-    public func applyGradient(colours: [UIColor], locations: [NSNumber]?, startPoint : CGPoint?, endPoint : CGPoint?) -> CAGradientLayer {
+    internal func applyGradient(colours: [UIColor], locations: [NSNumber]?, startPoint : CGPoint?, endPoint : CGPoint?) -> CAGradientLayer {
         let gradient: CAGradientLayer = CAGradientLayer()
         gradient.frame = self.bounds
         if(startPoint != nil && endPoint != nil){
@@ -140,12 +140,12 @@ extension UIView {
         endEditing(false)
     }
     
-    public func asCircle(){
+    internal func asCircle(){
         self.layer.cornerRadius = self.frame.width / 2;
         self.layer.masksToBounds = true
     }
     
-    static public func createView<T : UIView>(fromBundle bundle : Bundle? = Bundle.main) -> T?{
+    static internal func createView<T : UIView>(fromBundle bundle : Bundle? = Bundle.main) -> T?{
         let popup = UIView.instanceFromNib(name: String(describing: T.self), fromBundle: bundle) as? T
         return popup
     }
@@ -161,7 +161,7 @@ extension UIView {
         }
     }
     
-    public func attachTo(view : UIView){
+    internal func attachTo(view : UIView){
         
         view.addSubview(self)
         // self.frame = view.bounds
