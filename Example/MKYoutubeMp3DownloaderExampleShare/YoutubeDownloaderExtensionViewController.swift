@@ -109,7 +109,7 @@ internal class YoutubeDownloaderExtensionViewController: UIViewController {
             return
         }
         
-        if currentManager != nil {
+        if currentManager != nil, currentManager?.ytVideoInfo != nil {
             self.download()
         } else {
             getInfo(youtubeUrl: youtubeUrl) { [weak self] in
@@ -146,15 +146,10 @@ internal class YoutubeDownloaderExtensionViewController: UIViewController {
         self.view.isUserInteractionEnabled = false
         self.progressText.textColor = .black
         self.consoleMessage = ""
-        guard let manager = currentManager else {
+        
+        guard let manager = currentManager, manager.ytVideoInfo != nil else {
             startYoutubeMp3DownloadOperation()
             return
-        }
-        
-        var fileName : String?
-        
-        if let title = manager.ytVideoInfo?.title {
-            fileName = "\(title)"
         }
         
         manager.downloadYoutubeVideo(youtubeVideoName: manager.ytVideoInfo?.title, callback: {[weak self] (ytDownloadModel, error) in
@@ -181,12 +176,12 @@ internal class YoutubeDownloaderExtensionViewController: UIViewController {
                     self?.progressText.text = "Converting to mp3"
                     self?.consoleMessage = ytModel.message
                 case .finishedVideoConverting:
+                    
                     self?.progressText.text = "Mp3 successfully finished"
                     self?.mp3FilePath = ytModel.mp3AudioFile
                     self?.consoleMessage = ytModel.message
                     self?.progressIndicator.stopAnimating()
                     self?.view.isUserInteractionEnabled = true
-                    
                     self?.shareBtnOutlet.isHidden = false
                     
                 case .errorVideoDownload:
