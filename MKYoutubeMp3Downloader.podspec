@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKYoutubeMp3Downloader'
-  s.version          = '0.1.0'
+  s.version          = '0.0.2'
   s.summary          = 'Download youtube videos into mp3 file'
 
   s.description      = <<-DESC
