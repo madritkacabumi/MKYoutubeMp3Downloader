@@ -20,22 +20,22 @@
 
 /* Begin PBXBuildFile section */
 		0A445CD6477EDD7B587B8342115AA8CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		0B59D8FE732DC50552FCEE4F0D7753B2 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = C823478CA448B76C69A2DB68D760F59D /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		19051EED49C5ECBD79C2FB697EC83920 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 17DDA8CD87F80C2C4F3EB806EF4DCFDA /* zip.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		39464E5D948269EA20FD8367F5571A25 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CCA9B5E7F4F27F0FA302994610D653C /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0B59D8FE732DC50552FCEE4F0D7753B2 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D2B6F840BAEDDD95972D370652171EF /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		19051EED49C5ECBD79C2FB697EC83920 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 68F75DEF1DBEB673738B1C53B0F7B307 /* zip.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		39464E5D948269EA20FD8367F5571A25 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C2E5FCD02E206915E065C509F5E1C5C /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3DD8E593CD1E9C16A27C316ED398F1EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		4022A35A2351BF1C709301F9C070DB56 /* Zip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C4CFDB63E71C151FB5C90E455018CC /* Zip-dummy.m */; };
-		4D4346C99002112CE4979E0FABAB5EBB /* QuickZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A06517D1F4C45015FB057ABCBC31F6 /* QuickZip.swift */; };
+		4022A35A2351BF1C709301F9C070DB56 /* Zip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 800F4BACFD8E5CAA0C5A4E229CA267F0 /* Zip-dummy.m */; };
+		4D4346C99002112CE4979E0FABAB5EBB /* QuickZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526CBF805F51FE5DDE0FFA871D40D3B /* QuickZip.swift */; };
 		4F1DDBB9240F62D8585BDFB8F5342E06 /* Pods-MKYoutubeMp3Downloader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD19237B3EED10356FE79F136814ADAB /* Pods-MKYoutubeMp3Downloader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6843C83BAA944777F9A3C96A62EECEAD /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 6A7975DC23D03A3CDABCA0404E4CD8FA /* unzip.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		893E158F7816FE83C52D10CF1112783F /* ZipUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471B7D5B0538134FB42874F3DF40EB82 /* ZipUtilities.swift */; };
-		8FB420C8BEC39AD4DDD47B1C482A91EB /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 77BF7A91063EE04F6E3667270F799DF8 /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B32AAC463925D876F97F6621FC5D8B5F /* Zip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF32045895FDE46A9825093FF49F01E4 /* Zip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6843C83BAA944777F9A3C96A62EECEAD /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D0F0D5C31AE41618555BDC212EBCDAC /* unzip.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		893E158F7816FE83C52D10CF1112783F /* ZipUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600F4FE240EB0266466B4D82DC80C438 /* ZipUtilities.swift */; };
+		8FB420C8BEC39AD4DDD47B1C482A91EB /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AF6BF72A3F9DF71C88B40C672EA3260 /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B32AAC463925D876F97F6621FC5D8B5F /* Zip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67FD57739E2BD9803EC4A9FA62FF3B26 /* Zip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B39CAC9BC7D57EEBB797E189AC487366 /* Pods-MKYoutubeMp3Downloader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB79196616589D0F1E3E25058C3A5937 /* Pods-MKYoutubeMp3Downloader-dummy.m */; };
-		B7B09EB99DF9DEBF6E969A9847DB29E1 /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9CAE264D52BE0CFB1FDAB9A48B8DDF /* Zip.swift */; };
-		BB43B38CCA690577BF5C8E93FE9283FF /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = CC2F9D24E7AE2F3C908B6ACCC5EDC9D0 /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CE76B553478ED8FA9CAEB000CAFFEE71 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 966AE00D3FBACAA414F984405FEA3F6C /* ioapi.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		DD63D6063EB5DAA46DCE7CF331DEA370 /* Zip.h in Headers */ = {isa = PBXBuildFile; fileRef = BFCEDCCD28482591B06FE4350951A2A8 /* Zip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7B09EB99DF9DEBF6E969A9847DB29E1 /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB806462D98D431656D492E2F9FFD8B6 /* Zip.swift */; };
+		BB43B38CCA690577BF5C8E93FE9283FF /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 64B11F824B469540F35937BDFA2E3A39 /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CE76B553478ED8FA9CAEB000CAFFEE71 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 991837BB98D493CD0D1BF47BC4264B5F /* ioapi.c */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DD63D6063EB5DAA46DCE7CF331DEA370 /* Zip.h in Headers */ = {isa = PBXBuildFile; fileRef = D59BD8F7F31380BD08BF2961FEB9CCD9 /* Zip.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,84 +56,86 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03A16F63E5D605226B3FE643D2D82C90 /* kvazaar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = kvazaar.framework; sourceTree = "<group>"; };
-		04CBFE396790E7DAAF2916D65444DC57 /* freetype.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = freetype.framework; sourceTree = "<group>"; };
+		004799A45101F020F781148E3C9B80E2 /* libwebp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libwebp.framework; sourceTree = "<group>"; };
 		04F0714B500C7AB8314018ECD7663EE5 /* Pods_MKYoutubeMp3Downloader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MKYoutubeMp3Downloader.framework; path = "Pods-MKYoutubeMp3Downloader.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		06A75C555F7CC4C4B4B6A884ABBDF43F /* libwebpdemux.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libwebpdemux.framework; sourceTree = "<group>"; };
-		0B59DAAC2FC686422F22D17FC624B498 /* gnutls.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = gnutls.framework; sourceTree = "<group>"; };
-		0CBC738E7586B0DA23A813451DF6A100 /* libavcodec.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavcodec.framework; sourceTree = "<group>"; };
-		0D9BABD6F1B18C03D40A9017B5AE757D /* mobile-ffmpeg-full.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "mobile-ffmpeg-full.xcconfig"; sourceTree = "<group>"; };
-		11A6488AE29F92D5F0395AB63E72FE64 /* libwebp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libwebp.framework; sourceTree = "<group>"; };
-		16483EBF90FA9D756908002410ED0822 /* shine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = shine.framework; sourceTree = "<group>"; };
-		172754C45C3B28FD54911CF8AD07A9D0 /* mobileffmpeg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mobileffmpeg.framework; sourceTree = "<group>"; };
-		17DDA8CD87F80C2C4F3EB806EF4DCFDA /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = Zip/minizip/zip.c; sourceTree = "<group>"; };
-		17F78D958A6FD317E5FED9C14E8D4E3B /* libogg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libogg.framework; sourceTree = "<group>"; };
-		1F6DA36C35C1FA460E46173AC90CEE52 /* fontconfig.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = fontconfig.framework; sourceTree = "<group>"; };
-		213ABC2DB41C35B3F2D169E071C2D2E4 /* libavdevice.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavdevice.framework; sourceTree = "<group>"; };
-		2B78C7CC609FE2E0A0D0C644A5730CCA /* libhogweed.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libhogweed.framework; sourceTree = "<group>"; };
-		2C89FEB08E9A477289EF2DD35FE34F5E /* libass.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libass.framework; sourceTree = "<group>"; };
-		31CDA3EAE89F978C8A349B59DD3C4C5C /* libtheoradec.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libtheoradec.framework; sourceTree = "<group>"; };
+		0B0E70FE5F7E3188164CC129EAA130EA /* libswresample.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libswresample.framework; sourceTree = "<group>"; };
+		0B5B3B961C1874520AD0E0A21713B247 /* Zip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zip.release.xcconfig; sourceTree = "<group>"; };
+		0E49EFA9C01185DDC5243F153F2877FF /* lame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = lame.framework; sourceTree = "<group>"; };
+		142BBA9454816EFAD5C36B6F44731AA3 /* libvpx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libvpx.framework; sourceTree = "<group>"; };
+		206A1AF66A550E5D57DCE001B8D004E5 /* mobileffmpeg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = mobileffmpeg.framework; sourceTree = "<group>"; };
+		2363B8C01DDA95107E1F4582421E2587 /* mobile-ffmpeg-full.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "mobile-ffmpeg-full.release.xcconfig"; sourceTree = "<group>"; };
+		2F1DC28C4B6BCA6A772A3CB4E72D9C77 /* soxr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = soxr.framework; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		362A18EA578D45DA47C01ABC695D09A7 /* libvpx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libvpx.framework; sourceTree = "<group>"; };
-		39E663E44D9868863A61D6AD271CA37F /* libpng.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libpng.framework; sourceTree = "<group>"; };
-		3F33FAE30AA8EFD19064AA922AD745A9 /* Zip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zip-prefix.pch"; sourceTree = "<group>"; };
+		36777E5269DFC01908F6AB2061709D0D /* gmp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = gmp.framework; sourceTree = "<group>"; };
+		398EF8F851F6E571FB4B73631C573F5F /* speex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = speex.framework; sourceTree = "<group>"; };
 		3F7D82C9DD8687CB331822935FB61654 /* Pods-MKYoutubeMp3Downloader-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MKYoutubeMp3Downloader-Info.plist"; sourceTree = "<group>"; };
-		4038DBF7D87E184EFAF70497949F4690 /* giflib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = giflib.framework; sourceTree = "<group>"; };
-		407C6F8E243725983FE9B0E8A36E37B3 /* libavformat.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavformat.framework; sourceTree = "<group>"; };
-		40A06517D1F4C45015FB057ABCBC31F6 /* QuickZip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickZip.swift; path = Zip/QuickZip.swift; sourceTree = "<group>"; };
-		40A17F1DEEB1FD9797E3C61AD52EBB85 /* fribidi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = fribidi.framework; sourceTree = "<group>"; };
-		471B7D5B0538134FB42874F3DF40EB82 /* ZipUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZipUtilities.swift; path = Zip/ZipUtilities.swift; sourceTree = "<group>"; };
-		497ADBE4957618A32CFD5BCB15807666 /* snappy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = snappy.framework; sourceTree = "<group>"; };
-		4E3196997C4CA8C0E728256ABA60AEF9 /* libuuid.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libuuid.framework; sourceTree = "<group>"; };
-		59C4CFDB63E71C151FB5C90E455018CC /* Zip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Zip-dummy.m"; sourceTree = "<group>"; };
-		5CCA9B5E7F4F27F0FA302994610D653C /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = Zip/minizip/ioapi.h; sourceTree = "<group>"; };
-		5E17A464E0A2361F7AC51EC499442B2A /* speex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = speex.framework; sourceTree = "<group>"; };
-		600006AFA695BAB1FEF43466DDEDA4C3 /* gmp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = gmp.framework; sourceTree = "<group>"; };
-		61ED11B800C6E1A8148CABB7D46E5797 /* wavpack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = wavpack.framework; sourceTree = "<group>"; };
-		621D208C12E1F4A613468E1EE52958CC /* expat.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = expat.framework; sourceTree = "<group>"; };
-		642B65CD26426AD1C962E1C3484B0B65 /* lame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = lame.framework; sourceTree = "<group>"; };
-		692ECD17FB109C757D81F559E65EAFDC /* opus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opus.framework; sourceTree = "<group>"; };
-		6A4E8EEE6466B709ABA35DEF638010E4 /* soxr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = soxr.framework; sourceTree = "<group>"; };
-		6A7975DC23D03A3CDABCA0404E4CD8FA /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = Zip/minizip/unzip.c; sourceTree = "<group>"; };
-		6C012301B1437D27C5196ED135B286ED /* libaom.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libaom.framework; sourceTree = "<group>"; };
+		416273418073318747ACFF9821FD7122 /* libxml2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libxml2.framework; sourceTree = "<group>"; };
+		42F107F269480E15BFF5A5907D394814 /* libswscale.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libswscale.framework; sourceTree = "<group>"; };
+		46F6FFD05F2E91F0CC87A44207056951 /* shine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = shine.framework; sourceTree = "<group>"; };
+		4D71FC65A3ED4E61F39641409B6285F9 /* libvorbisfile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libvorbisfile.framework; sourceTree = "<group>"; };
+		4E4365685F387F30927504F159EDE9DC /* libhogweed.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libhogweed.framework; sourceTree = "<group>"; };
+		5DA7853A0321BD14E81D2A313C1358D7 /* gnutls.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = gnutls.framework; sourceTree = "<group>"; };
+		5E76CE2078441F552004588C8865FBC7 /* mobile-ffmpeg-full.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "mobile-ffmpeg-full.debug.xcconfig"; sourceTree = "<group>"; };
+		600F4FE240EB0266466B4D82DC80C438 /* ZipUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZipUtilities.swift; path = Zip/ZipUtilities.swift; sourceTree = "<group>"; };
+		64B11F824B469540F35937BDFA2E3A39 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = Zip/minizip/zip.h; sourceTree = "<group>"; };
+		664D199962F7690E382B25F8FFE6C3EC /* libass.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libass.framework; sourceTree = "<group>"; };
+		664E42C8800036C50275B5C7B0DB336C /* libavformat.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavformat.framework; sourceTree = "<group>"; };
+		66F91321067F24BE35A96E7BFC70F839 /* giflib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = giflib.framework; sourceTree = "<group>"; };
+		672265B88FE14354638BCB1022DB4302 /* libilbc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libilbc.framework; sourceTree = "<group>"; };
+		67FD57739E2BD9803EC4A9FA62FF3B26 /* Zip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zip-umbrella.h"; sourceTree = "<group>"; };
+		68F75DEF1DBEB673738B1C53B0F7B307 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = Zip/minizip/zip.c; sourceTree = "<group>"; };
+		69AEE436BAFD93CC56C77D360B9DEE9A /* libaom.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libaom.framework; sourceTree = "<group>"; };
+		6A9E3FC8BA533BAE4365AAF67D0196F6 /* jpeg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = jpeg.framework; sourceTree = "<group>"; };
+		6D0F0D5C31AE41618555BDC212EBCDAC /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = Zip/minizip/unzip.c; sourceTree = "<group>"; };
 		702D9DC85337CBDBE2F39BB5FFE25250 /* Pods-MKYoutubeMp3Downloader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MKYoutubeMp3Downloader.modulemap"; sourceTree = "<group>"; };
-		7226EA6A27843DF745AEF9305260B716 /* Zip.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zip.xcconfig; sourceTree = "<group>"; };
-		76B3DAAD67163F828E595DBDC45F854E /* Zip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Zip.modulemap; sourceTree = "<group>"; };
-		774318E4E6F4372582F478FFA6717039 /* libvorbisfile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libvorbisfile.framework; sourceTree = "<group>"; };
-		77BF7A91063EE04F6E3667270F799DF8 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = Zip/minizip/unzip.h; sourceTree = "<group>"; };
-		7B04CB57B890A31C112A1FA3E7EF4901 /* libnettle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libnettle.framework; sourceTree = "<group>"; };
-		82289EB5D7CBD2E5A1974968AAFCB30A /* libavfilter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavfilter.framework; sourceTree = "<group>"; };
-		8F9B2AED56812B1C3782F78E154C0997 /* libtheoraenc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libtheoraenc.framework; sourceTree = "<group>"; };
+		75F7B83DE96E00E1554C10508EE3D334 /* libnettle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libnettle.framework; sourceTree = "<group>"; };
+		7AF6BF72A3F9DF71C88B40C672EA3260 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = Zip/minizip/unzip.h; sourceTree = "<group>"; };
+		7BAB6EAD78443BBFEC86C6108AE335AA /* Zip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Zip-Info.plist"; sourceTree = "<group>"; };
+		7C2E5FCD02E206915E065C509F5E1C5C /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = Zip/minizip/ioapi.h; sourceTree = "<group>"; };
+		7D2109B9A4B3BFEA510A03A3BF9C6E31 /* libsndfile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libsndfile.framework; sourceTree = "<group>"; };
+		800F4BACFD8E5CAA0C5A4E229CA267F0 /* Zip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Zip-dummy.m"; sourceTree = "<group>"; };
+		821245E18A36BCC225E42928A4B8AD6C /* Zip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zip.debug.xcconfig; sourceTree = "<group>"; };
+		82A874FF6AD14629FF115D5029F027F9 /* libavcodec.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavcodec.framework; sourceTree = "<group>"; };
+		8347921D444DC63C59DA154FE4D7FB48 /* libavfilter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavfilter.framework; sourceTree = "<group>"; };
+		84932D1A3EABD053738D17628CEF2427 /* libpng.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libpng.framework; sourceTree = "<group>"; };
+		86A7FEED16C50EEFC19A0285D32799D5 /* libvorbisenc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libvorbisenc.framework; sourceTree = "<group>"; };
+		87BB8FAC477E871EB28F6126310604A8 /* libogg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libogg.framework; sourceTree = "<group>"; };
+		8D2B6F840BAEDDD95972D370652171EF /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = Zip/minizip/crypt.h; sourceTree = "<group>"; };
+		8FDB980AE95ECD498723B9A3793C43CD /* libwebpdemux.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libwebpdemux.framework; sourceTree = "<group>"; };
 		930D497501BDD3D9BBCCD5A3E07B37D3 /* Pods-MKYoutubeMp3Downloader-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MKYoutubeMp3Downloader-acknowledgements.plist"; sourceTree = "<group>"; };
-		94017EA09C689C7B4961BB2012462747 /* libsndfile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libsndfile.framework; sourceTree = "<group>"; };
 		94942F6850D18DC291DDED11143A5971 /* Pods-MKYoutubeMp3Downloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKYoutubeMp3Downloader.release.xcconfig"; sourceTree = "<group>"; };
-		96618F50B8E4A1747B56E6D417E73740 /* libwebpdecoder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libwebpdecoder.framework; sourceTree = "<group>"; };
-		966AE00D3FBACAA414F984405FEA3F6C /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = Zip/minizip/ioapi.c; sourceTree = "<group>"; };
+		98DB2D02D6E9ED249ABFAE82FE1079F9 /* Zip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zip-prefix.pch"; sourceTree = "<group>"; };
+		991837BB98D493CD0D1BF47BC4264B5F /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = Zip/minizip/ioapi.c; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E8E07B63F62B78707B86D029CBB5FB3 /* Pods-MKYoutubeMp3Downloader-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MKYoutubeMp3Downloader-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A4712775B7F0E74A82A66C4209845363 /* libavutil.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavutil.framework; sourceTree = "<group>"; };
+		A1FB3E11DE5A6B732FE74D447F0262E8 /* libuuid.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libuuid.framework; sourceTree = "<group>"; };
+		A526CBF805F51FE5DDE0FFA871D40D3B /* QuickZip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickZip.swift; path = Zip/QuickZip.swift; sourceTree = "<group>"; };
 		A845402EF959A57A4640F2A4F5155943 /* Zip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Zip.framework; path = Zip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA488AA9BCCB8A9B792D2EAF6440F1D3 /* Zip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Zip-Info.plist"; sourceTree = "<group>"; };
-		AF32045895FDE46A9825093FF49F01E4 /* Zip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zip-umbrella.h"; sourceTree = "<group>"; };
-		B0F481AB169BB34934210123E3B765ED /* libvorbisenc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libvorbisenc.framework; sourceTree = "<group>"; };
-		BB6CB70F1A6F828B99E8F9C36031DE2A /* libswresample.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libswresample.framework; sourceTree = "<group>"; };
-		BFCEDCCD28482591B06FE4350951A2A8 /* Zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Zip.h; path = Zip/Zip.h; sourceTree = "<group>"; };
-		C7DB4EB5768D580214046D561DF4471C /* libilbc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libilbc.framework; sourceTree = "<group>"; };
-		C823478CA448B76C69A2DB68D760F59D /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = Zip/minizip/crypt.h; sourceTree = "<group>"; };
-		C92F9E218B14F0516441FB2A35D079DA /* libvorbis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libvorbis.framework; sourceTree = "<group>"; };
-		C94151B200F226E8AC515BA4F0B83419 /* libxml2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libxml2.framework; sourceTree = "<group>"; };
-		CC2F9D24E7AE2F3C908B6ACCC5EDC9D0 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = Zip/minizip/zip.h; sourceTree = "<group>"; };
-		CEF1BAB9BD4DE49DC631B051182A801D /* jpeg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = jpeg.framework; sourceTree = "<group>"; };
-		D50846AEE334CA9727D9A5012AD7F604 /* libopencore-amrnb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "libopencore-amrnb.framework"; sourceTree = "<group>"; };
-		D880E82781F793339DD18182638C76E9 /* libswscale.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libswscale.framework; sourceTree = "<group>"; };
-		DB133B768506234122ACF81610D6CD16 /* libtheora.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libtheora.framework; sourceTree = "<group>"; };
+		AD2FF34524BC90FC1FD543C1D18F37EE /* libtheoraenc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libtheoraenc.framework; sourceTree = "<group>"; };
+		ADDC1FFF2218662ADA2539B764CC3C46 /* twolame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = twolame.framework; sourceTree = "<group>"; };
+		B035FBE49C944FD9EE8690FD34B34DDA /* libavutil.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavutil.framework; sourceTree = "<group>"; };
+		B26C33F704D4F06BC79FF38306E4AB94 /* libavdevice.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libavdevice.framework; sourceTree = "<group>"; };
+		B8F26718545B6A80D5A046E8E2C6E3A3 /* fribidi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = fribidi.framework; sourceTree = "<group>"; };
+		C0CA3988F007955F898C0BFD4F9C7757 /* Zip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Zip.modulemap; sourceTree = "<group>"; };
+		C424B849D5845F541C8D4C4ACFEFBB2E /* libtheoradec.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libtheoradec.framework; sourceTree = "<group>"; };
+		C4869B6D6FAB59A576B7EB4135430553 /* freetype.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = freetype.framework; sourceTree = "<group>"; };
+		CFBDF043B5C50A10D948F377E0EF56B8 /* libopencore-amrnb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "libopencore-amrnb.framework"; sourceTree = "<group>"; };
+		D3EE7484A0A07F788A13DE62199CF72B /* kvazaar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = kvazaar.framework; sourceTree = "<group>"; };
+		D589CEE45E1F81CB3EB069450B8EF8EE /* tiff.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = tiff.framework; sourceTree = "<group>"; };
+		D59BD8F7F31380BD08BF2961FEB9CCD9 /* Zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Zip.h; path = Zip/Zip.h; sourceTree = "<group>"; };
 		DB79196616589D0F1E3E25058C3A5937 /* Pods-MKYoutubeMp3Downloader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MKYoutubeMp3Downloader-dummy.m"; sourceTree = "<group>"; };
 		DD19237B3EED10356FE79F136814ADAB /* Pods-MKYoutubeMp3Downloader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MKYoutubeMp3Downloader-umbrella.h"; sourceTree = "<group>"; };
-		E0819CA54EC2FEBE41AF7568B6DAF591 /* twolame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = twolame.framework; sourceTree = "<group>"; };
-		EA9CAE264D52BE0CFB1FDAB9A48B8DDF /* Zip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zip.swift; path = Zip/Zip.swift; sourceTree = "<group>"; };
-		F6A297C362F25B3B569FFB0B73857575 /* libopencore-amrwb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "libopencore-amrwb.framework"; sourceTree = "<group>"; };
+		DF68E1D2D1F9A058DC2507E553E03CC0 /* expat.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = expat.framework; sourceTree = "<group>"; };
+		E15A4D5434118A28451D4E5B7B1BA5FC /* snappy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = snappy.framework; sourceTree = "<group>"; };
+		E40E4233B6871F5255F3F70D4324C893 /* opus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opus.framework; sourceTree = "<group>"; };
+		EA6FDBDC677DB24861B09EE63ED57301 /* wavpack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = wavpack.framework; sourceTree = "<group>"; };
+		EE67FEF29A1DEA4095684E6CB32093DB /* libopencore-amrwb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "libopencore-amrwb.framework"; sourceTree = "<group>"; };
+		EF7905B68CF3B0C2C7C8421A729C9AC8 /* libtheora.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libtheora.framework; sourceTree = "<group>"; };
+		F157F1C906EE996A1791AC8EA6DC8820 /* libvorbis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libvorbis.framework; sourceTree = "<group>"; };
+		F6218AD93920D7FA2F602EF3B76295AB /* fontconfig.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = fontconfig.framework; sourceTree = "<group>"; };
+		F6F22C331426530611C97BDF38F36FBD /* libwebpdecoder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libwebpdecoder.framework; sourceTree = "<group>"; };
 		F7881F3A038B4770ECB0917B20E8A3ED /* Pods-MKYoutubeMp3Downloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKYoutubeMp3Downloader.debug.xcconfig"; sourceTree = "<group>"; };
-		F8B081EDFFB5DF05F72392366D38931B /* tiff.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = tiff.framework; sourceTree = "<group>"; };
+		FB806462D98D431656D492E2F9FFD8B6 /* Zip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zip.swift; path = Zip/Zip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,121 +158,103 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3EC21DD99BA2968A91B443FB41ECDEEA /* Zip */ = {
+		09E6C1CAA108EAB83E96B08EF385FDA2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C823478CA448B76C69A2DB68D760F59D /* crypt.h */,
-				966AE00D3FBACAA414F984405FEA3F6C /* ioapi.c */,
-				5CCA9B5E7F4F27F0FA302994610D653C /* ioapi.h */,
-				40A06517D1F4C45015FB057ABCBC31F6 /* QuickZip.swift */,
-				6A7975DC23D03A3CDABCA0404E4CD8FA /* unzip.c */,
-				77BF7A91063EE04F6E3667270F799DF8 /* unzip.h */,
-				17DDA8CD87F80C2C4F3EB806EF4DCFDA /* zip.c */,
-				CC2F9D24E7AE2F3C908B6ACCC5EDC9D0 /* zip.h */,
-				BFCEDCCD28482591B06FE4350951A2A8 /* Zip.h */,
-				EA9CAE264D52BE0CFB1FDAB9A48B8DDF /* Zip.swift */,
-				471B7D5B0538134FB42874F3DF40EB82 /* ZipUtilities.swift */,
-				69B76E98B2336526CF80F1958B42BE0E /* Support Files */,
-			);
-			name = Zip;
-			path = Zip;
-			sourceTree = "<group>";
-		};
-		5B712A9161B7051A246A0C74B60E8B60 /* mobile-ffmpeg-full */ = {
-			isa = PBXGroup;
-			children = (
-				968242751CCAEB91ABF7B5725544D284 /* Frameworks */,
-				72E4128F8DC2848948D868A8AFB51DDD /* Support Files */,
-			);
-			name = "mobile-ffmpeg-full";
-			path = "mobile-ffmpeg-full";
-			sourceTree = "<group>";
-		};
-		69B76E98B2336526CF80F1958B42BE0E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				76B3DAAD67163F828E595DBDC45F854E /* Zip.modulemap */,
-				7226EA6A27843DF745AEF9305260B716 /* Zip.xcconfig */,
-				59C4CFDB63E71C151FB5C90E455018CC /* Zip-dummy.m */,
-				AA488AA9BCCB8A9B792D2EAF6440F1D3 /* Zip-Info.plist */,
-				3F33FAE30AA8EFD19064AA922AD745A9 /* Zip-prefix.pch */,
-				AF32045895FDE46A9825093FF49F01E4 /* Zip-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Zip";
-			sourceTree = "<group>";
-		};
-		72B036BD9E018C782FEABA16617B2DED /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5B712A9161B7051A246A0C74B60E8B60 /* mobile-ffmpeg-full */,
-				3EC21DD99BA2968A91B443FB41ECDEEA /* Zip */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		72E4128F8DC2848948D868A8AFB51DDD /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0D9BABD6F1B18C03D40A9017B5AE757D /* mobile-ffmpeg-full.xcconfig */,
+				5E76CE2078441F552004588C8865FBC7 /* mobile-ffmpeg-full.debug.xcconfig */,
+				2363B8C01DDA95107E1F4582421E2587 /* mobile-ffmpeg-full.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/mobile-ffmpeg-full";
 			sourceTree = "<group>";
 		};
-		968242751CCAEB91ABF7B5725544D284 /* Frameworks */ = {
+		45D3DCA24F337AB85BB4C22293753990 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				621D208C12E1F4A613468E1EE52958CC /* expat.framework */,
-				1F6DA36C35C1FA460E46173AC90CEE52 /* fontconfig.framework */,
-				04CBFE396790E7DAAF2916D65444DC57 /* freetype.framework */,
-				40A17F1DEEB1FD9797E3C61AD52EBB85 /* fribidi.framework */,
-				4038DBF7D87E184EFAF70497949F4690 /* giflib.framework */,
-				600006AFA695BAB1FEF43466DDEDA4C3 /* gmp.framework */,
-				0B59DAAC2FC686422F22D17FC624B498 /* gnutls.framework */,
-				CEF1BAB9BD4DE49DC631B051182A801D /* jpeg.framework */,
-				03A16F63E5D605226B3FE643D2D82C90 /* kvazaar.framework */,
-				642B65CD26426AD1C962E1C3484B0B65 /* lame.framework */,
-				6C012301B1437D27C5196ED135B286ED /* libaom.framework */,
-				2C89FEB08E9A477289EF2DD35FE34F5E /* libass.framework */,
-				0CBC738E7586B0DA23A813451DF6A100 /* libavcodec.framework */,
-				213ABC2DB41C35B3F2D169E071C2D2E4 /* libavdevice.framework */,
-				82289EB5D7CBD2E5A1974968AAFCB30A /* libavfilter.framework */,
-				407C6F8E243725983FE9B0E8A36E37B3 /* libavformat.framework */,
-				A4712775B7F0E74A82A66C4209845363 /* libavutil.framework */,
-				2B78C7CC609FE2E0A0D0C644A5730CCA /* libhogweed.framework */,
-				C7DB4EB5768D580214046D561DF4471C /* libilbc.framework */,
-				7B04CB57B890A31C112A1FA3E7EF4901 /* libnettle.framework */,
-				17F78D958A6FD317E5FED9C14E8D4E3B /* libogg.framework */,
-				D50846AEE334CA9727D9A5012AD7F604 /* libopencore-amrnb.framework */,
-				F6A297C362F25B3B569FFB0B73857575 /* libopencore-amrwb.framework */,
-				39E663E44D9868863A61D6AD271CA37F /* libpng.framework */,
-				94017EA09C689C7B4961BB2012462747 /* libsndfile.framework */,
-				BB6CB70F1A6F828B99E8F9C36031DE2A /* libswresample.framework */,
-				D880E82781F793339DD18182638C76E9 /* libswscale.framework */,
-				DB133B768506234122ACF81610D6CD16 /* libtheora.framework */,
-				31CDA3EAE89F978C8A349B59DD3C4C5C /* libtheoradec.framework */,
-				8F9B2AED56812B1C3782F78E154C0997 /* libtheoraenc.framework */,
-				4E3196997C4CA8C0E728256ABA60AEF9 /* libuuid.framework */,
-				C92F9E218B14F0516441FB2A35D079DA /* libvorbis.framework */,
-				B0F481AB169BB34934210123E3B765ED /* libvorbisenc.framework */,
-				774318E4E6F4372582F478FFA6717039 /* libvorbisfile.framework */,
-				362A18EA578D45DA47C01ABC695D09A7 /* libvpx.framework */,
-				11A6488AE29F92D5F0395AB63E72FE64 /* libwebp.framework */,
-				96618F50B8E4A1747B56E6D417E73740 /* libwebpdecoder.framework */,
-				06A75C555F7CC4C4B4B6A884ABBDF43F /* libwebpdemux.framework */,
-				C94151B200F226E8AC515BA4F0B83419 /* libxml2.framework */,
-				172754C45C3B28FD54911CF8AD07A9D0 /* mobileffmpeg.framework */,
-				692ECD17FB109C757D81F559E65EAFDC /* opus.framework */,
-				16483EBF90FA9D756908002410ED0822 /* shine.framework */,
-				497ADBE4957618A32CFD5BCB15807666 /* snappy.framework */,
-				6A4E8EEE6466B709ABA35DEF638010E4 /* soxr.framework */,
-				5E17A464E0A2361F7AC51EC499442B2A /* speex.framework */,
-				F8B081EDFFB5DF05F72392366D38931B /* tiff.framework */,
-				E0819CA54EC2FEBE41AF7568B6DAF591 /* twolame.framework */,
-				61ED11B800C6E1A8148CABB7D46E5797 /* wavpack.framework */,
+				DF68E1D2D1F9A058DC2507E553E03CC0 /* expat.framework */,
+				F6218AD93920D7FA2F602EF3B76295AB /* fontconfig.framework */,
+				C4869B6D6FAB59A576B7EB4135430553 /* freetype.framework */,
+				B8F26718545B6A80D5A046E8E2C6E3A3 /* fribidi.framework */,
+				66F91321067F24BE35A96E7BFC70F839 /* giflib.framework */,
+				36777E5269DFC01908F6AB2061709D0D /* gmp.framework */,
+				5DA7853A0321BD14E81D2A313C1358D7 /* gnutls.framework */,
+				6A9E3FC8BA533BAE4365AAF67D0196F6 /* jpeg.framework */,
+				D3EE7484A0A07F788A13DE62199CF72B /* kvazaar.framework */,
+				0E49EFA9C01185DDC5243F153F2877FF /* lame.framework */,
+				69AEE436BAFD93CC56C77D360B9DEE9A /* libaom.framework */,
+				664D199962F7690E382B25F8FFE6C3EC /* libass.framework */,
+				82A874FF6AD14629FF115D5029F027F9 /* libavcodec.framework */,
+				B26C33F704D4F06BC79FF38306E4AB94 /* libavdevice.framework */,
+				8347921D444DC63C59DA154FE4D7FB48 /* libavfilter.framework */,
+				664E42C8800036C50275B5C7B0DB336C /* libavformat.framework */,
+				B035FBE49C944FD9EE8690FD34B34DDA /* libavutil.framework */,
+				4E4365685F387F30927504F159EDE9DC /* libhogweed.framework */,
+				672265B88FE14354638BCB1022DB4302 /* libilbc.framework */,
+				75F7B83DE96E00E1554C10508EE3D334 /* libnettle.framework */,
+				87BB8FAC477E871EB28F6126310604A8 /* libogg.framework */,
+				CFBDF043B5C50A10D948F377E0EF56B8 /* libopencore-amrnb.framework */,
+				EE67FEF29A1DEA4095684E6CB32093DB /* libopencore-amrwb.framework */,
+				84932D1A3EABD053738D17628CEF2427 /* libpng.framework */,
+				7D2109B9A4B3BFEA510A03A3BF9C6E31 /* libsndfile.framework */,
+				0B0E70FE5F7E3188164CC129EAA130EA /* libswresample.framework */,
+				42F107F269480E15BFF5A5907D394814 /* libswscale.framework */,
+				EF7905B68CF3B0C2C7C8421A729C9AC8 /* libtheora.framework */,
+				C424B849D5845F541C8D4C4ACFEFBB2E /* libtheoradec.framework */,
+				AD2FF34524BC90FC1FD543C1D18F37EE /* libtheoraenc.framework */,
+				A1FB3E11DE5A6B732FE74D447F0262E8 /* libuuid.framework */,
+				F157F1C906EE996A1791AC8EA6DC8820 /* libvorbis.framework */,
+				86A7FEED16C50EEFC19A0285D32799D5 /* libvorbisenc.framework */,
+				4D71FC65A3ED4E61F39641409B6285F9 /* libvorbisfile.framework */,
+				142BBA9454816EFAD5C36B6F44731AA3 /* libvpx.framework */,
+				004799A45101F020F781148E3C9B80E2 /* libwebp.framework */,
+				F6F22C331426530611C97BDF38F36FBD /* libwebpdecoder.framework */,
+				8FDB980AE95ECD498723B9A3793C43CD /* libwebpdemux.framework */,
+				416273418073318747ACFF9821FD7122 /* libxml2.framework */,
+				206A1AF66A550E5D57DCE001B8D004E5 /* mobileffmpeg.framework */,
+				E40E4233B6871F5255F3F70D4324C893 /* opus.framework */,
+				46F6FFD05F2E91F0CC87A44207056951 /* shine.framework */,
+				E15A4D5434118A28451D4E5B7B1BA5FC /* snappy.framework */,
+				2F1DC28C4B6BCA6A772A3CB4E72D9C77 /* soxr.framework */,
+				398EF8F851F6E571FB4B73631C573F5F /* speex.framework */,
+				D589CEE45E1F81CB3EB069450B8EF8EE /* tiff.framework */,
+				ADDC1FFF2218662ADA2539B764CC3C46 /* twolame.framework */,
+				EA6FDBDC677DB24861B09EE63ED57301 /* wavpack.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		616693B0BE47F30974A145F2BE75F96E /* mobile-ffmpeg-full */ = {
+			isa = PBXGroup;
+			children = (
+				45D3DCA24F337AB85BB4C22293753990 /* Frameworks */,
+				09E6C1CAA108EAB83E96B08EF385FDA2 /* Support Files */,
+			);
+			name = "mobile-ffmpeg-full";
+			path = "mobile-ffmpeg-full";
+			sourceTree = "<group>";
+		};
+		72B036BD9E018C782FEABA16617B2DED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				616693B0BE47F30974A145F2BE75F96E /* mobile-ffmpeg-full */,
+				FD4982DE83891FCA73D7E86DAA81C576 /* Zip */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DC46633C46D7A0EEFD7E96184D2D614 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0CA3988F007955F898C0BFD4F9C7757 /* Zip.modulemap */,
+				800F4BACFD8E5CAA0C5A4E229CA267F0 /* Zip-dummy.m */,
+				7BAB6EAD78443BBFEC86C6108AE335AA /* Zip-Info.plist */,
+				98DB2D02D6E9ED249ABFAE82FE1079F9 /* Zip-prefix.pch */,
+				67FD57739E2BD9803EC4A9FA62FF3B26 /* Zip-umbrella.h */,
+				821245E18A36BCC225E42928A4B8AD6C /* Zip.debug.xcconfig */,
+				0B5B3B961C1874520AD0E0A21713B247 /* Zip.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Zip";
 			sourceTree = "<group>";
 		};
 		9FCDDF95F495B65F22C9B9B6A94235E3 /* Targets Support Files */ = {
@@ -331,6 +315,26 @@
 			);
 			name = "Pods-MKYoutubeMp3Downloader";
 			path = "Target Support Files/Pods-MKYoutubeMp3Downloader";
+			sourceTree = "<group>";
+		};
+		FD4982DE83891FCA73D7E86DAA81C576 /* Zip */ = {
+			isa = PBXGroup;
+			children = (
+				8D2B6F840BAEDDD95972D370652171EF /* crypt.h */,
+				991837BB98D493CD0D1BF47BC4264B5F /* ioapi.c */,
+				7C2E5FCD02E206915E065C509F5E1C5C /* ioapi.h */,
+				A526CBF805F51FE5DDE0FFA871D40D3B /* QuickZip.swift */,
+				6D0F0D5C31AE41618555BDC212EBCDAC /* unzip.c */,
+				7AF6BF72A3F9DF71C88B40C672EA3260 /* unzip.h */,
+				68F75DEF1DBEB673738B1C53B0F7B307 /* zip.c */,
+				64B11F824B469540F35937BDFA2E3A39 /* zip.h */,
+				D59BD8F7F31380BD08BF2961FEB9CCD9 /* Zip.h */,
+				FB806462D98D431656D492E2F9FFD8B6 /* Zip.swift */,
+				600F4FE240EB0266466B4D82DC80C438 /* ZipUtilities.swift */,
+				7DC46633C46D7A0EEFD7E96184D2D614 /* Support Files */,
+			);
+			name = Zip;
+			path = Zip;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -485,22 +489,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0CEE32F0A4CE4030A02DE376098B0B85 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D9BABD6F1B18C03D40A9017B5AE757D /* mobile-ffmpeg-full.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		14293BB1D00C57FCD3846C968666C825 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 94942F6850D18DC291DDED11143A5971 /* Pods-MKYoutubeMp3Downloader.release.xcconfig */;
@@ -533,42 +521,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		14CE01D93B49CE32EF37D4C406344EBC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7226EA6A27843DF745AEF9305260B716 /* Zip.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Zip/Zip-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Zip/Zip-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Zip/Zip.modulemap";
-				PRODUCT_MODULE_NAME = Zip;
-				PRODUCT_NAME = Zip;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -636,9 +588,9 @@
 			};
 			name = Release;
 		};
-		7F2AED2D941F434257C1237BF45EE778 /* Debug */ = {
+		41973F530BCDE535E628B9DD90D152B4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7226EA6A27843DF745AEF9305260B716 /* Zip.xcconfig */;
+			baseConfigurationReference = 0B5B3B961C1874520AD0E0A21713B247 /* Zip.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -666,14 +618,15 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		87D154CC203EB4AC2A1482516FFDB0D8 /* Release */ = {
+		4AC1DA4E39DF32D6A66D0F80DFB1AA2E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D9BABD6F1B18C03D40A9017B5AE757D /* mobile-ffmpeg-full.xcconfig */;
+			baseConfigurationReference = 2363B8C01DDA95107E1F4582421E2587 /* mobile-ffmpeg-full.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -790,14 +743,65 @@
 			};
 			name = Debug;
 		};
+		C6EC1A722D0DD774BC435DA693DFD215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 821245E18A36BCC225E42928A4B8AD6C /* Zip.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Zip/Zip-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Zip/Zip-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Zip/Zip.modulemap";
+				PRODUCT_MODULE_NAME = Zip;
+				PRODUCT_NAME = Zip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D24C0260DBAC297889C6AB6F6880DDA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E76CE2078441F552004588C8865FBC7 /* mobile-ffmpeg-full.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		20B1698FF38E5758EA065320551C355A /* Build configuration list for PBXAggregateTarget "mobile-ffmpeg-full" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0CEE32F0A4CE4030A02DE376098B0B85 /* Debug */,
-				87D154CC203EB4AC2A1482516FFDB0D8 /* Release */,
+				D24C0260DBAC297889C6AB6F6880DDA4 /* Debug */,
+				4AC1DA4E39DF32D6A66D0F80DFB1AA2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -814,8 +818,8 @@
 		608DA657D5E30B576DA6268896352268 /* Build configuration list for PBXNativeTarget "Zip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7F2AED2D941F434257C1237BF45EE778 /* Debug */,
-				14CE01D93B49CE32EF37D4C406344EBC /* Release */,
+				C6EC1A722D0DD774BC435DA693DFD215 /* Debug */,
+				41973F530BCDE535E628B9DD90D152B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

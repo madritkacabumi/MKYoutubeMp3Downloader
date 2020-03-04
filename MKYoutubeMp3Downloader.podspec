@@ -24,7 +24,6 @@ Then using a ffmpeg external swift library will convert the video in mp3.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '11.2'
-  s.swift_version = '5.0'
   s.source_files = 'MKYoutubeMp3Downloader/**/*'
   
   s.resource_bundles = {
@@ -33,5 +32,6 @@ Then using a ffmpeg external swift library will convert the video in mp3.
   s.ios.vendored_frameworks = 'libs/NodeMobile.framework'
   s.dependency 'Zip'
   s.dependency 'mobile-ffmpeg-full'
+  s.swift_version = '5.0'
   s.static_framework = true
 end

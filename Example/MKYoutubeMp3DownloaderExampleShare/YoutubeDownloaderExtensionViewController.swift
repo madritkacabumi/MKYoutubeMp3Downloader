@@ -49,9 +49,7 @@ internal class YoutubeDownloaderExtensionViewController: UIViewController {
     @IBAction func actionBtnPressed(_ sender: UIButton) {
         view.endEditing(true)
         guard ServerManager.shared.serverStarted else {
-            if !ServerManager.shared.serverStarted {
-                startServer()
-            }
+            startServer()
             return
         }
         
@@ -125,6 +123,7 @@ internal class YoutubeDownloaderExtensionViewController: UIViewController {
         self.consoleMessage = ""
         self.mainActionBtn.isHidden = true
         currentManager = YoutubeDownloadManager(youtubeUrl: youtubeUrl)
+        
         currentManager?.getYoutubeVideoInfo(callback: { [weak self] (manager, infoModel, error) in
             guard let self = self else { return }
             self.progressIndicator.stopAnimating()
@@ -159,24 +158,29 @@ internal class YoutubeDownloaderExtensionViewController: UIViewController {
                 self?.progressText.text = error.message
                 self?.view.isUserInteractionEnabled = true
             } else if let ytModel = ytDownloadModel {
+                
                 switch ytModel.action {
                 case .startVideoDownload:
                     self?.progressText.text = "Starting video download"
                     self?.consoleMessage = ""
+                    
                 case .progressVideoDownload:
                     self?.progressText.text = "Downloading"
                     self?.consoleMessage = "Downloaded => \(ytModel.downloaded)\(ytModel.sizeLabel) of \(ytModel.totalSize)\(ytModel.sizeLabel) \n Total downloaded : \(ytModel.percent) \n  Estimated time left : \(ytModel.estimatedTimeLeft)"
+                    
                 case .endVideoDownload:
                     self?.progressText.text = "Video downloaded, Converting ...."
                     self?.consoleMessage = ""
+                    
                 case .startVideoConverting:
                     self?.progressText.text = "Starting converting to mp3"
                     self?.consoleMessage = ""
+                    
                 case .proccessingVideoConverting:
                     self?.progressText.text = "Converting to mp3"
                     self?.consoleMessage = ytModel.message
-                case .finishedVideoConverting:
                     
+                case .finishedVideoConverting:
                     self?.progressText.text = "Mp3 successfully finished"
                     self?.mp3FilePath = ytModel.mp3AudioFile
                     self?.consoleMessage = ytModel.message
