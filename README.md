@@ -75,12 +75,12 @@ Then the framework using ffmpeg will convert it to a mp3 file.
 4. Download youtube video and get the progress from the download start until video successfully converted to mp3.
    ```ruby
         manager.downloadYoutubeVideo(youtubeVideoName: manager.ytVideoInfo?.title, callback: {[weak self] (ytDownloadModel, error) in
-  // check the progress
+            // check the progress
         })
     ```
 
 5. Progress and error handling
-The YoutubeDownloaderModel object will provide downloading or converting progres or error each time is invoked.
+The YoutubeDownloaderModel object will provide downloading or converting progress or error each time is invoked.
 If an error occurs it stops it's job.
 The progress: YoutubeDownloaderModel::action is an enum containing all the flow starting from video download until mp3 convertion or error:
    ```ruby
@@ -135,7 +135,15 @@ The progress: YoutubeDownloaderModel::action is an enum containing all the flow 
             }
         })
      ```
-With the project's General tab still open, update the Bundle Identifier value. The project's Lister target ships with the value:
+     YoutubeDownloaderModel contains a lot of additional data that are available depending on the case like the example above
+
+## Drawback
+The third party library [nodejs-mobile](https://github.com/JaneaSystems/nodejs-mobile) has a drawback on it's own. It requires a thread that will run infinitely, so, unless the app is terminated it will be running and right now it is quite challenging stopping it. If you put your app in the background, after a while (the app is in background) the system will terminate it.
+This shut's down the server and you cannot use it to until a totally restart of your app.
+This could happen if you use this framework on the app instance (it could take a while once your app is in background for the thread to be terminated).
+
+
+
 
 com.example.apple-samplecode.Lister
 
