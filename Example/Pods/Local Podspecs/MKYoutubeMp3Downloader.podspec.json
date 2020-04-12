@@ -1,9 +1,9 @@
 {
   "name": "MKYoutubeMp3Downloader",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "summary": "Download youtube videos into mp3 file",
   "description": "The library will use a node js server in-mobile built in (local server).\nIt will use a node js script will download a youtube video.\nThen using a ffmpeg external swift library will convert the video in mp3.",
-  "homepage": "https://github.com/Madrit Kacabumi/MKYoutubeToMp3Downloader",
+  "homepage": "https://github.com/devMadrit/MKYoutubeMp3Downloader",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,8 @@
     "Madrit Kacabumi": "madrit.kacabumi@gmail.com"
   },
   "source": {
-    "path": "/Users/madrit/Documents/Workspace/iOS/libraries/MKYoutubeMp3Downloader/MKYoutubeMp3Downloader"
+    "git": "https://github.com/devMadrit/MKYoutubeMp3Downloader.git",
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "11.2"
@@ -34,5 +35,7 @@
 
     ]
   },
-  "static_framework": true
+  "swift_versions": "5.0",
+  "static_framework": true,
+  "swift_version": "5.0"
 }

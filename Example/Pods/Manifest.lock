@@ -1,12 +1,12 @@
 PODS:
-  - MKYoutubeMp3Downloader (0.1.0):
+  - MKYoutubeMp3Downloader (1.0.0):
     - mobile-ffmpeg-full
     - Zip
   - mobile-ffmpeg-full (4.3.1)
   - Zip (1.1.0)
 
 DEPENDENCIES:
-  - MKYoutubeMp3Downloader (from `~/Documents/Workspace/iOS/libraries/MKYoutubeMp3Downloader`)
+  - MKYoutubeMp3Downloader (from `../../MKYoutubeMp3Downloader`)
 
 SPEC REPOS:
   trunk:
@@ -15,13 +15,13 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   MKYoutubeMp3Downloader:
-    :path: "~/Documents/Workspace/iOS/libraries/MKYoutubeMp3Downloader"
+    :path: "../../MKYoutubeMp3Downloader"
 
 SPEC CHECKSUMS:
-  MKYoutubeMp3Downloader: db9427f7d61dc64e289e966cf8bb246d6dab85a7
+  MKYoutubeMp3Downloader: 7f38bbb3c305772c3335614023770431eeeb6519
   mobile-ffmpeg-full: 0da7d44a6f9d5573daec359dafa7537f4682278f
   Zip: 8877eede3dda76bcac281225c20e71c25270774c
 
-PODFILE CHECKSUM: f6d69fcb22806e7312c075b2666989b8f23784f9
+PODFILE CHECKSUM: fd7a3e582e85368c2f6693fcd0f2862bf6676b9c
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.0
